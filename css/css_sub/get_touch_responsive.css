@@ -1,0 +1,2355 @@
+/* ======================================
+|   |   |  Mobile Menu
+========================================= */
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 50px;
+    color: #7065f0;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: 860px;
+    top: 2px;
+    
+    /*Hide mobile nav open button*/
+    display: none;
+}
+
+#mobile-nav {
+    /*Mobile menu will be hidden by default with height 0%*/
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, .98);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+#mobile-nav-close-btn {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 50px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    right: 35px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+#mobile-nav a {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 16px;
+    color: #3D7A5B;
+    font-weight: 400;
+    text-transform: uppercase;
+    display:inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #7065f0;
+}
+
+
+
+/*==========================================
+|   |   Bootstrap 3 Media Queries
+============================================*/
+
+/*Extra large screen down to 4k*/
+@media (min-width: 2561px) {
+    #intouch_homepage h1 {
+        margin-top: 80px;
+        font-size: 200px;
+        width:max-content;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*Keep "in touch" section*/
+    .vertical-heading p {
+        font-size: 25px;
+    }
+
+}
+
+/*Large screens*/
+@media (max-width: 2560px) {
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*Below is the "Reach Us! section" at the navigation bar css*/
+    .get_touch_btn a {
+        position: relative;
+        top: -3px;
+        left: 10px;
+        text-decoration: none;
+    } 
+}
+
+/* Between screens ----------- */
+@media (min-width: 1200px) and (max-width: 1260px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: -75px;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*Contact*/    
+    .contact_logo {
+        position: relative;
+        width: 160px;
+        top: -20px;
+        left: -20px;
+    }
+
+    .office {
+        top: -5px;
+        left: -10px;
+    }
+
+    .office-details {
+        font-size: 16px;
+        line-height: 35px;
+        width: 850px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -20px;
+        font-size: 16px;
+        
+    }
+
+    .footer_icons {
+        left:  -40px;
+    }
+} 
+
+/* Between screens ----------- */
+@media (min-width: 1100px) and (max-width: 1199px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: -25px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+    }
+
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*Contact*/    
+    .contact_logo {
+        position: relative;
+        width: 160px;
+        top: -20px;
+        left: -80px;
+    }
+
+    .office {
+        top: -5px;
+        left: -70px;
+    }
+
+    .office-details {
+        font-size: 16px;
+        line-height: 35px;
+        width: 850px;
+        text-align: justify;
+    }
+
+    .qrcode img {
+        left: 340px;
+    }
+    
+    /* Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -80px;
+        font-size: 16px;
+        
+    }
+
+    .footer_icons {
+        left:  10px;
+    }
+} 
+
+/* Between screens ----------- */
+@media (min-width: 1024px) and (max-width: 1099px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: -60px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        font-size: 40px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 18px;
+    }
+
+    /*Contact*/
+    
+    .contact_logo {
+        position: relative;
+        width: 160px;
+        top: -20px;
+        left: -30px;
+    }
+
+    .office {
+        top: -5px;
+        left: -30px;
+    }
+
+    .office-details {
+        font-size: 16px;
+        line-height: 35px;
+        width: 850px;
+        text-align: justify;
+    }
+
+    .qrcode img {
+        left: 300px;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -30px;
+        font-size: 16px;
+        
+    }
+
+    .footer_icons {
+        left:  -30px;
+    }
+} 
+
+/* Between screens ----------- */
+@media (min-width: 992px) and (max-width: 1023px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: -90px;
+        padding: -10px 0;
+    }
+
+    ul.navbar-nav > li > a {
+        font-size: 11px;
+    }
+    
+    .navbar-brand img {
+        width: 100px;
+        top: -5px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        font-size: 35px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Contact*/
+    .contact_logo {
+        position: relative;
+        width: 150px;
+        top: -10px;
+        left: -20px;
+    }
+
+    .office {
+        top: 10px;
+        left: -10px;
+    }
+
+    .office-details {
+        font-size: 15px;
+        line-height: 33px;
+        width: 850px;
+        text-align: justify;
+    }
+
+    .qrcode img {
+        left: 300px;
+        width: 180px;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -20px;
+        font-size: 15px;
+        
+    }
+
+    .footer_icons {
+        left:  -60px;
+        font-size: 20px;
+    }
+} 
+
+/* Between is for close to tablets ----------- */
+@media (min-width: 846px) and (max-width: 991px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: 10px;
+    }
+
+    ul.navbar-nav > li > a {
+        font-size: 10px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        top: -10px;
+    }
+
+    #intouch_homepage h1 {
+        position: relative;
+        left: -440px;
+        font-size: 120px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+        left: 20px;
+    }
+
+    .chat_and_btn p {
+        font-size: 15px;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        font-size: 35px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 90px;
+        width: 570px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        width: 650px;
+        height: 134px;
+        font-size: 35px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -80px;
+        left: 10px;
+        width: 520px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 100px;
+        left: 120px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+    /*Contact*/
+    .contact_logo {
+        position: relative;
+        width: 150px;
+        top: -10px;
+        left: -40px;
+    }
+
+    .office {
+        top: 10px;
+        left: -40px;
+    }
+
+    .office-details {
+        font-size: 14px;
+        line-height: 33px;
+        width: 550px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -40px;
+        font-size: 15px;
+        
+    }
+
+    .footer_icons {
+        left:  50px;
+        font-size: 20px;
+    }
+
+} 
+
+/* Between is for close to tablets ----------- */
+@media (min-width: 768px) and (max-width: 845px) {
+    /*Home section*/
+    .nav {
+        position: relative;
+        left: 5px;
+        padding: -10px 0;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    ul.navbar-nav > li > a {
+        font-size: 9px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        top: -10px;
+    }
+
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+        left: 10px;
+    }
+
+    .chat_and_btn p {
+        font-size: 14px;
+    }
+
+    /* ======================================
+    |  Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        visibility: hidden;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        font-size: 35px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 90px;
+        width: 570px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        width: 650px;
+        height: 134px;
+        font-size: 35px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -80px;
+        left: 10px;
+        width: 520px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 100px;
+        left: 120px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+
+    /*Contact*/
+    .contact_logo {
+        position: relative;
+        width: 150px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .office {
+        top: 10px;
+        left: -10px;
+    }
+
+    .office-details {
+        font-size: 14px;
+        line-height: 33px;
+        width: 550px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -10px;
+        font-size: 15px;
+        
+    }
+
+    .footer_icons {
+        left:  -20px;
+        font-size: 20px;
+    }
+
+} 
+
+/*The medium screen pic started below because it's tablet*/
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (min-width: 699px) and (max-width: 767px) {
+
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
+
+    .navbar-brand img {
+        position: relative;
+        top: -13px;
+        left: -15px;
+        width: 100px;
+        height: 60px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 650px;
+        top: 5px;
+        font-size: 30px;
+        color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 40px;
+        position: relative;
+        top: 1px;
+        left: 670px;
+    }
+
+    #mobile-nav a {
+        font-size: 18px;
+    }
+
+    /*Navigation bar*/
+    .navbar {
+        padding: 68x 0;
+    }
+    
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 300px;
+        height: 150px;
+        left: 10px;
+    }
+
+    .chat_and_btn p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        color: #000;
+        font-size: 40px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-left: -16px;
+        z-index: 3;
+        visibility: visible;
+    }
+
+    #arrow-down:hover,
+    #arrow-down:focus {
+        color: #fff;
+    }
+    /*Arrow down ends here*/
+
+    /*QUOTE SECTION*/
+    #quote .vertical-heading h2 {
+        font-size: 40px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 60px;
+        width: 590px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        width: 650px;
+        height: 134px;
+        font-size: 40px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -70px;
+        left: 10px;
+        width: 520px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 110px;
+        left: 80px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+    /*Contact*/
+    
+    .contact_logo {
+        position: relative;
+        width: 150px;
+        top: -10px;
+        left: -5px;
+    }
+
+    .office {
+        top: 10px;
+        left: 5px;
+    }
+
+    .office-details {
+        font-size: 15px;
+        line-height: 33px;
+        width: 550px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -5px;
+        font-size: 15px;
+        
+    }
+
+    .footer_icons {
+        left:  -50px;
+        font-size: 20px;
+    }
+
+    .btn-back-to-top {
+        font-size: 20px;
+        z-index: 1;
+    }
+
+}
+
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (min-width: 631px) and (max-width: 698px) {
+
+/*Navigation bar*/
+.navbar-brand {
+    padding: 10px 10px;
+}
+
+.navbar-brand img {
+    position: relative;
+    top: -13px;
+    left: -15px;
+    width: 100px;
+    height: 60px;
+}
+
+/*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+.navbar-nav {
+    display: none;
+}
+
+/*Mobile Menu button display*/
+#mobile-nav-open-btn {
+    display: block;
+    left: 580px;
+    top: 5px;
+    font-size: 30px;
+    color: #7065f0
+}
+
+#mobile-nav-close-btn {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 40px;
+    position: relative;
+    top: 7px;
+    left: 595px;
+}
+
+#mobile-nav a {
+    font-size: 18px;
+}
+
+/*Navigation bar*/
+.navbar {
+    padding: 68x 0;
+}
+
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 280px;
+        height: 150px;
+        left: 20px;
+    }
+
+    .chat_and_btn p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+/* ======================================
+|   |   |   Arrow down which displays only from this mobile view
+========================================= */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: #000;
+    font-size: 40px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 3;
+    visibility: visible;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #fff;
+}
+/*Arrow down ends here*/
+
+    /*QUOTE SECTION*/
+    #quote .vertical-heading h2 {
+        font-size: 40px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 20px;
+        width: 590px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        width: 650px;
+        height: 134px;
+        font-size: 40px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -70px;
+        left: 10px;
+        width: 520px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 110px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+/*Contact*/
+
+.contact_logo {
+    position: relative;
+    width: 150px;
+    top: -10px;
+    left: 5px;
+}
+
+.office {
+    top: 10px;
+    left: 5px;
+}
+
+.office-details {
+    font-size: 15px;
+    line-height: 33px;
+    width: 550px;
+    text-align: justify;
+}
+
+/*Footer*/
+footer {
+    padding: 5px;
+}
+
+footer p {
+    position: relative;
+    top: 14px;
+    left: -10px;
+    font-size: 15px;
+    
+}
+
+.footer_icons {
+    left:  -50px;
+    font-size: 20px;
+}
+
+.btn-back-to-top {
+    font-size: 20px;
+    z-index: 1;
+}
+
+}
+
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (min-width: 563px) and (max-width: 630px) {
+
+/*Navigation bar*/
+.navbar-brand {
+    padding: 10px 10px;
+}
+
+.navbar-brand img {
+    position: relative;
+    top: -13px;
+    left: -15px;
+    width: 100px;
+    height: 60px;
+}
+
+/*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+.navbar-nav {
+    display: none;
+}
+
+/*Mobile Menu button display*/
+#mobile-nav-open-btn {
+    display: block;
+    left: 510px;
+    top: 5px;
+    font-size: 30px;
+    color: #7065f0
+}
+
+#mobile-nav-close-btn {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 40px;
+    position: relative;
+    top: 7px;
+    left: 525px;
+}
+
+#mobile-nav a {
+    font-size: 18px;
+}
+
+/*Navigation bar*/
+.navbar {
+    padding: 68x 0;
+}
+
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 280px;
+        height: 150px;
+        left: 20px;
+    }
+    .chat_and_btn p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+/* ======================================
+|   |   |   Arrow down which displays only from this mobile view
+========================================= */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: #000;
+    font-size: 40px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 3;
+    visibility: visible;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #fff;
+}
+/*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        font-size: 40px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 15px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 19px;
+        width: 530px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 5px;
+        width: 650px;
+        height: 134px;
+        font-size: 36px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -70px;
+        left: 5px;
+        width: 520px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 110px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+/*Contact*/
+
+.contact_logo {
+    position: relative;
+    width: 150px;
+    top: -10px;
+    left: -10px;
+}
+
+.office {
+    top: 10px;
+    left: -3px;
+}
+
+.office-details {
+    font-size: 15px;
+    line-height: 30px;
+    width: 550px;
+    text-align: justify;
+}
+
+/*Footer*/
+footer {
+    padding: 5px;
+}
+
+footer p {
+    position: relative;
+    top: 14px;
+    left: -15px;
+    font-size: 13px;
+    
+}
+
+.footer_icons {
+    left:  -50px;
+    font-size: 18px;
+}
+
+.socials_icons {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.btn-back-to-top {
+    font-size: 20px;
+    z-index: 1;
+}
+
+}
+
+/*The small home screen pics started from this screen size*/
+/* Extra small Device (Portrait phones and Smaller devices) */
+@media (min-width: 481px) and (max-width: 562px) {
+
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
+
+    .navbar-brand img {
+        position: relative;
+        top: -5px;
+        left: -15px;
+        width: 65px;
+        height: 40px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 430px;
+        top: 5px;
+        font-size: 25px;
+        color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
+
+    #mobile-nav a {
+        font-size: 13px;
+    }
+
+    /*Navigation bar*/
+    .navbar {
+        padding: 5px 0;
+    }
+
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 280px;
+        height: 150px;
+        left: 20px;
+        text-align: justify;
+    }
+
+    .chat_and_btn p {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        color: #000;
+        font-size: 30px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-left: -16px;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    #arrow-down:hover,
+    #arrow-down:focus {
+        color: #fff;
+    }
+    /*Arrow down ends here*/
+
+    /*QUOTE SECTION*/
+    #quote .vertical-heading h2 {
+        font-size: 30px;
+        
+    }
+
+    .vertical-heading p {
+        font-size: 13px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 160px;
+        left: 19px;
+        width: 450px;
+        height: 220px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 5px;
+        width: 650px;
+        height: 134px;
+        font-size: 30px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -70px;
+        left: 5px;
+        width: 420px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 110px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
+
+    .contact_logo {
+        position: relative;
+        width: 120px;
+        top: -40px;
+        left: 10px;
+    }
+    
+    .office {
+        position: relative;
+        top: 10px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 13px;
+        line-height: 25px;
+        width: 350px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+    
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -320px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
+
+}
+
+/* Extra small Device - Large mobile (Portrait phones and Smaller devices) */
+@media (min-width: 413px) and (max-width: 480px) {
+
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
+
+    .navbar-brand img {
+        position: relative;
+        top: -5px;
+        left: -15px;
+        width: 65px;
+        height: 40px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 360px;
+        top: 5px;
+        font-size: 25px;
+        color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
+
+    #mobile-nav a {
+        font-size: 13px;
+    }
+
+    /*Navigation bar*/
+    .navbar {
+        padding: 5px 0;
+    }
+
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 280px;
+        height: 150px;
+        left: 20px;
+    }
+
+    .chat_and_btn p {
+        left: -190px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        color: #000;
+        font-size: 30px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-left: -16px;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    #arrow-down:hover,
+    #arrow-down:focus {
+        color: #fff;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote .vertical-heading h2 {
+        position: relative;
+        top: 50px;
+        font-size: 29px;
+        
+    }
+
+    .vertical-heading p {
+        position: relative;
+        top: -50px;
+        font-size: 13px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 100px;
+        left: 19px;
+        width: 380px;
+        height: 260px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 5px;
+        width: 400px;
+        height: 134px;
+        font-size: 29px;
+        line-height: 40px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -30px;
+        left: 5px;
+        width: 360px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 50px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }
+
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
+
+    .contact_logo {
+        position: relative;
+        width: 120px;
+        top: -40px;
+        left: 10px;
+    }
+    
+    .office {
+        position: relative;
+        top: 10px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 13px;
+        line-height: 25px;
+        width: 350px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+    
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -280px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
+
+}
+
+/* Extra small Device - Medium mobile (Portrait phones and Smaller devices) */
+@media (min-width: 346px) and (max-width: 412px) {
+
+    /*Navigation bar*/
+    .navbar-brand {
+    padding: 10px 10px;
+    }
+
+    .navbar-brand img {
+    position: relative;
+    top: -5px;
+    left: -15px;
+    width: 65px;
+    height: 40px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+    display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+    display: block;
+    left: 315px;
+    top: 5px;
+    font-size: 25px;
+    color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 35px;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    }
+
+    #mobile-nav a {
+    font-size: 13px;
+    }
+
+    /*Navigation bar*/
+    .navbar {
+    padding: 5px 0;
+    }
+
+    /*Home section*/
+    #intouch_homepage h1 {
+        position: relative;
+        left: -480px;
+        font-size: 100px;
+    }
+
+    .intouch_down_text {
+        position: absolute;
+        top: 280px;
+        height: 150px;
+        left: 20px;
+    }
+
+    .chat_and_btn p {
+        left: -190px;
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: #000;
+    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+    visibility: visible;
+    }
+
+    #arrow-down:hover,
+    #arrow-down:focus {
+    color: #fff;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote {
+        height: 600px;
+        
+    }
+    
+    #quote .content-box-md {
+        height: 600px;
+    }
+
+    #quote .vertical-heading h2 {
+        position: relative;
+        top: 50px;
+        font-size: 29px;
+    }
+
+    .vertical-heading p {
+        position: relative;
+        top: -50px;
+        font-size: 13px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 100px;
+        left: 19px;
+        width: 320px;
+        height: 310px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 5px;
+        width: 280px;
+        height: 134px;
+        font-size: 29px;
+        line-height: 45px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        width: 280px;
+        font-size: 13px;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 50px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }    
+
+    /*Contact*/
+    #contact {
+    height: 440px;
+    }
+
+    .contact_logo {
+    position: relative;
+    width: 120px;
+    top: -40px;
+    left: 10px;
+    }
+
+    .office {
+    position: relative;
+    top: 10px;
+    left: -5px;
+    }
+
+    .office-details {
+    font-size: 13px;
+    line-height: 25px;
+    width: 330px;
+    text-align: justify;
+    }
+
+    /*Footer*/
+    footer {
+    padding: 5px;
+    }
+
+    footer p {
+    position: relative;
+    top: 15px;
+    left: -10px;
+    font-size: 12px;
+    width: 350px;
+    }
+
+    .footer_icons {
+    position: relative;
+    top: -60px;
+    left:  -210px;
+    font-size: 20px;
+    text-align: right;
+    }
+
+    .btn-back-to-top {
+    font-size: 18px;
+    z-index: 1;
+    }
+
+    }
+
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (max-width: 345px) {
+
+/*Navigation bar*/
+.navbar-brand {
+    padding: 10px 10px;
+}
+
+.navbar-brand img {
+    position: relative;
+    top: -5px;
+    left: -15px;
+    width: 65px;
+    height: 40px;
+}
+
+/*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+.navbar-nav {
+    display: none;
+}
+
+/*Mobile Menu button display*/
+#mobile-nav-open-btn {
+    display: block;
+    left: 310px;
+    top: 5px;
+    font-size: 25px;
+    color: #7065f0
+}
+
+#mobile-nav-close-btn {
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    font-size: 35px;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+}
+
+#mobile-nav a {
+    font-size: 13px;
+}
+
+/*Navigation bar*/
+.navbar {
+    padding: 5px 0;
+}
+
+    /*Home section*/
+    #intouch_homepage h1 {
+    position: relative;
+    left: -480px;
+    font-size: 100px;
+}
+
+.intouch_down_text {
+    position: absolute;
+    top: 280px;
+    height: 150px;
+    left: 20px;
+}
+
+.chat_and_btn p {
+    left: -190px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+/* ======================================
+|   |   |   Arrow down which displays only from this mobile view
+========================================= */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: #000;
+    font-size: 30px;
+    width: 32px;
+    height: 32px;   
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+    visibility: visible;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #fff;
+}
+/*Arrow down ends here*/
+
+    /*quote section*/
+    #quote {
+        height: 600px;
+        
+    }
+    
+    #quote .content-box-md {
+        height: 600px;
+    }
+
+    #quote .vertical-heading h2 {
+        position: relative;
+        top: 50px;
+        font-size: 29px;
+    }
+
+    .vertical-heading p {
+        position: relative;
+        top: -50px;
+        font-size: 13px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 100px;
+        left: 19px;
+        width: 320px;
+        height: 310px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 5px;
+        width: 280px;
+        height: 134px;
+        font-size: 29px;
+        line-height: 45px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        width: 280px;
+        font-size: 13px;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 50px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }    
+
+/*Contact*/
+#contact {
+    height: 440px;
+}
+
+.contact_logo {
+    position: relative;
+    width: 120px;
+    top: -40px;
+    left: 10px;
+}
+
+.office {
+    position: relative;
+    top: 10px;
+    left: -5px;
+}
+
+.office-details {
+    font-size: 13px;
+    line-height: 25px;
+    width: 320px;
+    text-align: justify;
+}
+
+/*Footer*/
+footer {
+    padding: 5px;
+}
+
+footer p {
+    position: relative;
+    top: 15px;
+    left: -10px;
+    font-size: 12px;
+    width: 350px;
+}
+
+.footer_icons {
+    position: relative;
+    top: -60px;
+    left:  -200px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.btn-back-to-top {
+    font-size: 18px;
+    z-index: 1;
+}
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media (max-width : 320px) {
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
+    .navbar-brand img {
+        position: relative;
+        top: -5px;
+        left: -15px;
+        width: 65px;
+        height: 40px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 300px;
+        top: 5px;
+        font-size: 25px;
+        color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
+
+    #mobile-nav a {
+        font-size: 13px;
+    }
+
+    /*Navigation bar*/
+    .navbar {
+        padding: 5px 0;
+    }
+
+    /*Home section*/
+    #intouch_homepage h1 {
+    position: relative;
+    left: -480px;
+    font-size: 100px;
+}
+
+.intouch_down_text {
+    position: absolute;
+    top: 280px;
+    height: 150px;
+    left: 20px;
+}
+
+.chat_and_btn p {
+    left: -190px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+        /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        color: #000;
+        font-size: 30px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-left: -16px;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    #arrow-down:hover,
+    #arrow-down:focus {
+        color: #fff;
+    }
+    /*Arrow down ends here*/
+
+    /*quote section*/
+    #quote {
+        height: 600px;
+        
+    }
+    
+    #quote .content-box-md {
+        height: 600px;
+    }
+
+    #quote .vertical-heading h2 {
+        position: relative;
+        top: 50px;
+        font-size: 29px;
+    }
+
+    .vertical-heading p {
+        position: relative;
+        top: -50px;
+        font-size: 13px;
+    }
+
+    /*Send email section*/
+
+    #contact_form {
+        height: 450px;
+    }
+
+    #contact_and_form {
+        position: relative;
+        top: 100px;
+        left: 19px;
+        width: 310px;
+        height: 310px;
+        background: #fff;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .contact_section h2 {
+        position: relative;
+        top: 15px;
+        left: 1px;
+        width: 280px;
+        height: 134px;
+        font-size: 29px;
+        line-height: 45px;
+    }
+
+    .contact_section p {
+        position: relative;
+        top: -20px;
+        left: 1px;
+        width: 280px;
+        font-size: 13px;
+    }
+
+    .mail_btn {
+        position: relative;
+        top: 50px;
+        left: 40px;
+    }
+
+    .mail_btn a {
+        text-decoration: none;
+        padding: 10px 90px;
+        font-size: 15px;
+    }
+
+    #contact_form img {
+    visibility: hidden;
+    }    
+
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
+
+    .contact_logo {
+        position: relative;
+        width: 120px;
+        top: -40px;
+        left: 10px;
+    }
+    
+    .office {
+        position: relative;
+        top: 10px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 13px;
+        line-height: 25px;
+        width: 350px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+    
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -200px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .btn-back-to-top {
+        font-size: 15px;
+        z-index: 1;
+    }
+}
