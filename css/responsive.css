@@ -3242,7 +3242,7 @@
 
         /*481 is extra small screen hence, I am using the small picture of the home screen*/
         #background_image{
-            background-image: url('../img/home_page/estate_home_screen_small.png');
+            background-image: url('../img/home_page/main_page_photo_small.jpg');
             height: 100%;
             width: 100%;
         }
@@ -3690,7 +3690,7 @@
 
         /*481 is extra small screen hence, I am using the small picture of the home screen*/
         #background_image{
-            background-image: url('../img/home_page/estate_home_screen_small.png');
+            background-image: url('../img/home_page/main_page_photo_small.jpg');
             height: 100%;
             width: 100%;
         }
@@ -4138,7 +4138,7 @@
 
 /*481 is extra small screen hence, I am using the small picture of the home screen*/
 #background_image{
-    background-image: url('../img/home_page/estate_home_screen_small.png');
+    background-image: url('../img/home_page/main_page_photo_small.jpg');
     height: 100%;
     width: 100%;
 }
@@ -4586,7 +4586,7 @@ footer p {
     }
 
     #background_image{
-        background-image: url('../img/home_page/estate_home_screen_small.png');
+        background-image: url('../img/home_page/main_page_photo_small.jpg');
         height: 100%;
         width: 100%;
     }
@@ -5034,7 +5034,7 @@ footer p {
         }
 
         #background_image{
-            background-image: url('../img/home_page/estate_home_screen_small.png');
+            background-image: url('../img/home_page/main_page_photo_small.jpg');
             height: 100%;
             width: 100%;
         }
