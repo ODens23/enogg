@@ -91,7 +91,6 @@ section {
 #home {
     height: 100%;
     width: 100%;
-    margin-bottom: 300px;
 }
 
 #background_image {
@@ -156,46 +155,102 @@ section {
         /*Arrow down ends here*/
 
 /*===================================
-|  |  About Estate company
+|  |  About Energy company
 ====================================*/
-#about {
-    height: 800px;
-}
-#about_image .front {
+#about1 {
     position: relative;
-    top: -580px;
-    left: 40px;
-    left: -5px;
+    top: -200px;
+    height: 700px;
+}
+#about1_image .front {
+    position: relative;
+    top: -10px;
+    left: -80px;
     z-index: 1;
-}
-#about_image .back {
-    position: relative;
-    top: -30px;
-    left: -40px;
+    width: 700px;
 }
 
-#about_text h2 {
+#about1_text h2 {
+    position: relative;
+    left: 50px;
     font-size: 48px;
     font-weight: 600;
     padding-bottom: 10px;
     line-height: 67px;
 }
 
-#about_text h2 span {
-    color: #7065f0;
+#about1_text h2 span {
+    color: #000038;
 }
 
-#about_text p {
+#about1_text p {
+    position: relative;
+    left: 50px;
     padding-bottom: 10px;
     text-align: justify;
 }
 
-#about_text .about_btn {
+#about1_text .about_btn {
+    position: relative;
+    left: 50px;
     margin-top: 30px;
     text-decoration: none;
 }
 
-#about_text .about_btn a {
+#about1_text .about_btn a {
+    text-decoration: none;
+}
+
+/*About section which is MILESTONE Below*/
+
+#about2 {
+    position: relative;
+    top: -100px;
+    height: 700px;
+}
+#about2_image .front {
+    position: relative;
+    top: -10px;
+    left: -80px;
+    z-index: 1;
+    width: 700px;
+}
+
+#about2_text h2 {
+    position: relative;
+    left: 50px;
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    line-height: 67px;
+}
+
+#about2_text h2 span {
+    color: #96F50F;
+}
+
+#about2_text p {
+    position: relative;
+    left: 50px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+#about2_text p span {
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#about2_text .about_btn {
+    position: relative;
+    left: 50px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+#about2_text .about_btn a {
     text-decoration: none;
 }
 
@@ -222,7 +277,7 @@ section {
 }
 
 #estate_header h2 span {
-    color: #7065f0;
+    color: #000038;
 }
 
 /*=====================================================
@@ -244,7 +299,7 @@ section {
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    background-color: #7065f0;
+    background-color: #000038;
 }
 /*=======ends here=================*/
 
@@ -260,7 +315,7 @@ section {
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    background-color: #7065f0;
+    background-color: #000038;
 }
 /*=======ends here=================*/
 
@@ -417,7 +472,7 @@ section {
 
 .stats-item i {
     font-size: 42px;
-    color: #7065f0;
+    color: #000038;
     margin: 0 0 6px 0;
     -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
@@ -435,7 +490,7 @@ section {
 }
 
 .stats-item:hover {
-    background: #7065f0;
+    background: #000038;
 }
 
 .stats-item:hover i {
@@ -463,7 +518,7 @@ section {
 }
 
 .location_text h2 span {
-    color: #7065f0;
+    color: #000038;
 }
 
 .location_text p {
@@ -598,8 +653,8 @@ section {
 .btn-lotus:hover,
 .btn-lotus:focus {
     color: #fff;
-    background-color: #7065f0;
-    border: 1px solid #7065f0;
+    background-color: #96F50F;
+    border: 1px solid #96F50F;
     
 }
 
@@ -614,13 +669,12 @@ section {
 
 /*Below is the "Reach Us! section" at the navigation bar css*/
 .get_touch_btn {
-    left: 560.9px;
-    text-decoration: none;
+    position: relative;
+    left: -720px;
     z-index: 1;
 }
 
 .get_touch_btn a {
-    position: relative;
     top: 10px;
     text-decoration: none;
 }   
@@ -645,7 +699,7 @@ footer p {
 }
 
 footer p span {
-    color: #7065f0;
+    color: #000038;
     font-weight: 600;
 }
 
@@ -691,7 +745,7 @@ footer p span {
 
 .navbar-nav {
     position: relative;
-    left: -10px;
+    left: 60px;
 }
 
 ul.navbar-nav > li > a {
@@ -726,49 +780,5 @@ ul.navbar-nav > li > a:focus {
 
 .white-nav-top ul.navbar-nav > li > a:hover,
 .white-nav-top ul.navbar-nav > li > a:focus {
-    color:#7065f0;
+    color:#000038;
 }
-
-
-/* ======================================
-|   |   |  Animation
-========================================= */
-/* #about_text h2,
-.location_text span,
-#home-text,
-.left-section,
-.centre-section,
-.right-section {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-}
-
-#about_text h2{
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-}
-
-.location_text span {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
-
-#home-text {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.6s;
-}
-
-.left-section {
-    -webkit-animation-delay: 0.7s;
-    animation-delay: 0.7s;
-}
-
-.centre-section {
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-}
-
-.right-section {
-    -webkit-animation-delay: 0.9s;
-    animation-delay: 0.9s;
-} */
