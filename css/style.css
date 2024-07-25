@@ -164,15 +164,15 @@ section {
 }
 #about1_image .front {
     position: relative;
-    top: -10px;
-    left: -80px;
+    top: 20px;
+    left: -40px;
     z-index: 1;
-    width: 700px;
+    width: 600px;
 }
 
 #about1_text h2 {
     position: relative;
-    left: 50px;
+    left: 20px;
     font-size: 48px;
     font-weight: 600;
     padding-bottom: 10px;
@@ -185,14 +185,15 @@ section {
 
 #about1_text p {
     position: relative;
-    left: 50px;
+    left: 20px;
     padding-bottom: 10px;
     text-align: justify;
 }
 
 #about1_text .about_btn {
     position: relative;
-    left: 50px;
+    top: -10px;
+    left: 20px;
     margin-top: 30px;
     text-decoration: none;
 }
@@ -210,15 +211,15 @@ section {
 }
 #about2_image .front {
     position: relative;
-    top: -10px;
-    left: -80px;
+    top: 20px;
+    left: -40px;
     z-index: 1;
-    width: 700px;
+    width: 600px;
 }
 
 #about2_text h2 {
     position: relative;
-    left: 50px;
+    left: 20px;
     font-size: 48px;
     font-weight: 600;
     padding-bottom: 10px;
@@ -231,7 +232,7 @@ section {
 
 #about2_text p {
     position: relative;
-    left: 50px;
+    left: 20px;
     padding-bottom: 10px;
     text-align: justify;
 }
@@ -245,7 +246,7 @@ section {
 
 #about2_text .about_btn {
     position: relative;
-    left: 50px;
+    left: 20px;
     margin-top: 30px;
     text-decoration: none;
 }
