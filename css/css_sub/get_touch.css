@@ -1,16 +1,15 @@
 /*  ======================================
-    Baze Edge Style Themes    
+    Enogg Limited Style Themes    
     ------------------------------------------------------
     Fonts: Plus Jakarta Sans and Open Sans (and default 'san serif')
     ------------------------------------------------------
     Colors:
-        Blue Lotus:	    #7065f0
-        Viridian:		#3D7A5B
+        Chartreuse:	    #96F50F
+        Stratos:		#000038
         White:          #fff   
         White Smoke:	#f4f4f4
         Black:			#000
         Grey:			#212226
-        Sheen Green     #A6E029
         Yellow Green colours    #41B00A
 
     ====================================== */
@@ -64,11 +63,11 @@ section {
 
 #status {
     background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     margin-left: -35px;
     margin-top: -35px;
     background-image: url("/img/preloader/preloader.gif")
@@ -108,7 +107,7 @@ section {
 }
 
 #intouch_homepage span {
-    color: #7065f0;
+    color: #000038;
 }
 
 .intouch_down_text {
@@ -124,7 +123,7 @@ section {
 }
 
 .intouch_down_text span {
-color: #7065f0;
+color: #000038;
 }
 
 .get_touch_btn {
@@ -161,7 +160,7 @@ color: #7065f0;
 |   |   | Keep "in touch" section
 =======================================*/
 #quote {
-    background: url("/img/intouch_page_images/in_touch_image.jpg");
+    background: url("/img/intouch_page_images/quote_pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,7 +171,7 @@ color: #7065f0;
 
 #quote .content-box-md {
     height: 446px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     
 }
 
@@ -188,7 +187,7 @@ color: #7065f0;
 }
 
 .vertical-heading h2 span {
-    color: #7065f0;
+    color: #96F50F;
 }
 
 .vertical-heading p {
@@ -232,7 +231,7 @@ color: #7065f0;
 }
 
 .contact_section span {
-color: #7065f0;
+color: #000038;
 }
 
 .contact_section p {
@@ -281,19 +280,20 @@ color: #7065f0;
 |   |   |  Contact
 ========================================= */
 #contact {
-    position: relative;
     height: 450px;
 }
 
 .contact_logo {
     position: relative;
     top: -80px;
+    left: -40px;
     width: 190px;
 }
 
 .office {
     position: relative;
-    top: -30px;
+    top: -40px;
+    left: -40px;
 }
 .office-details {
     padding: 10px;
@@ -307,9 +307,10 @@ color: #7065f0;
 .qrcode img {
     position: relative;
     top: 70px;
-    left: 330px;
+    left: 380px;
     width: 200px;
 }
+
 
 /* ======================================
 |   |   |   Buttons
@@ -334,8 +335,8 @@ color: #7065f0;
 .btn-lotus:hover,
 .btn-lotus:focus {
     color: #fff;
-    background-color: #7065f0;
-    border: 1px solid #7065f0;
+    background-color: #96F50F;
+    border: 1px solid #96F50F;
     
 }
 
@@ -360,6 +361,7 @@ footer {
 footer p {
     position: relative;
     top: 10px;
+    left: -60px;
     font-size: 15px;
     text-align: left;
     color: #000;
@@ -368,14 +370,14 @@ footer p {
 }
 
 footer p span {
-    color: #7065f0;
+    color: #000038;
     font-weight: 600;
 }
 
 .footer_icons {
     position: relative;
     top: -10px;
-    left: -70px;
+    left: -20px;
     font-size: 25px;
     text-align: right;
 }
@@ -383,6 +385,7 @@ footer p span {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 
 /* ======================================
@@ -397,7 +400,7 @@ footer p span {
 
 .site-nav-wrapper {
     padding: 5px;
-    color: #000;
+    color: #000038;
 }
 
 .navbar-brand {
@@ -407,14 +410,19 @@ footer p span {
 .navbar-brand img {
     position: relative;
     left: 20px;
-    top: -15px;
-    width: 110px;
+    top: -5px;
+    width: 150px;
     height: auto;
 }
 
+.navbar-nav {
+    position: relative;
+    left: 60px;
+}
+
 ul.navbar-nav > li > a {
-    font-family: "Raleway", sans-serif;
-    color:#000;
+    font-family: "Plus Jakarta Sans", "Open Sans";
+    color:#000038;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -423,7 +431,7 @@ ul.navbar-nav > li > a {
 ul.navbar-nav > li > a:hover,
 ul.navbar-nav > li > a:focus {
     background: none;
-    color: #000;
+    color: #000038;
     background-color: #fff;
 }
 
@@ -437,10 +445,10 @@ ul.navbar-nav > li > a:focus {
 }
 
 .white-nav-top ul.navbar-nav > li > a {
-    color: #000;
+    color: #000038;
 }
 
 .white-nav-top ul.navbar-nav > li > a:hover,
 .white-nav-top ul.navbar-nav > li > a:focus {
-    color:#7065f0;
+    color:#000038;
 }
