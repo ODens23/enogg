@@ -1,0 +1,69 @@
+/*  ======================================
+    Enogg Limited Style Themes    
+    ------------------------------------------------------
+    Fonts: Plus Jakarta Sans and Open Sans (and default 'san serif')
+    ------------------------------------------------------
+    Colors:
+        Chartreuse:	    #96F50F
+        Stratos:		#000038
+        White:          #fff   
+        White Smoke:	#f4f4f4
+        Black:			#000
+        Grey:			#212226
+        Yellow Green colours    #41B00A
+
+    ====================================== */
+
+/* ======================================
+|    |   |   html, body
+========================================= */
+
+body {
+    background-image: 
+        linear-gradient(
+            to top right, #212226, #96F50F
+        );
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 490px;
+    overflow: hidden;
+}
+.item {
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    left: calc(40% - 100px);
+    top: 0;
+}
+#next, #prev {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+#next {
+    left: unset;
+    right: 50px;
+}
+
+.item img {
+    width: 200px;
+}
