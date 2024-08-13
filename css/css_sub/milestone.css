@@ -67,3 +67,15 @@ body {
 .item img {
     width: 200px;
 }
+.item span {
+    font-weight: bold;
+}
+.all_pics1 {
+    padding-left: 110px;
+}
+.all_pics2 {
+    padding: 20px;
+}
+.all_pics4 {
+    padding: 20px;
+}
