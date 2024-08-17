@@ -1095,15 +1095,34 @@
     }
 
     .navbar-brand img {
-        width: 160px;
-        top: -5px;
+        width: 150px;
+        top: 2px;
     }
 
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        left: 580px;
+        left: 640px;
         font-size: 10px;
+        padding: 10px;
     }  
+
+    #home {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 780px;
+    }
+
+    #background_image img {
+        visibility: hidden;
+    }
+
+    /*845 is landscape orientation screen size hence, I am using a medium picture of the home screen*/
+    #background_image{
+        position: absolute;
+        background-image: url('../img/home_page/main_page_photo_medium.jpg');
+        height: 100%;
+        width: 100%;
+    }
 
     .home-screen h1 {
         top: 490px;
@@ -1150,7 +1169,7 @@
         position: relative;
         top: -300px;
         left: 390px;
-        font-size: 30px;
+        font-size: 45px;
         line-height: 40px;
     }
 
@@ -1316,7 +1335,9 @@
 } 
 
 /* Extra small Device (Landscape phones and Portrait Tablets) */
-@media (min-width: 699px) and (max-width: 767px) {
+/*==============The below media query holds functions that runs for all medium screen 563 - 767px,
+other intermediate screen after this for medium (tab and co) screen holds only essential breakpoints only*/
+@media (min-width: 563px) and (max-width: 767px) {
 
     /*Navigation bar*/
     .navbar-brand {
@@ -1327,8 +1348,7 @@
         position: relative;
         top: -13px;
         left: -15px;
-        width: 100px;
-        height: 60px;
+        width: 190px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1365,7 +1385,8 @@
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
         position: relative;
-        
+        top: 20px;
+        left: 730px;
         text-decoration: none;
     }  
     
@@ -1373,446 +1394,7 @@
     #home {
         height: 100%;
         width: 100%;
-        margin-bottom: 200px;
-    }
-
-    #background_image img {
-        visibility: hidden;
-    }
-
-        /*767 is tablet screen size hence, I am using a medium picture of the home screen*/
-        #background_image{
-            background-image: url('../img/home_page/main_page_photo_medium.jpg');
-            height: 100%;
-            width: 100%;
-        }
-
-        .home-screen h1 {
-            position: relative;
-            top: 580px;
-            left: 190px;
-            font-size: 40px;
-            line-height: 55px;
-            width: 550px;
-        }
-
-        .home-screen p {
-            position: relative;
-            top: 490px;
-            left: 190px;
-            font-size: 15px;
-            line-height: 25px;
-            width: 520px;
-            text-align: justify;
-        }
-
-        /* ======================================
-        |   |   |   Arrow down which displays only from this mobile view
-        ========================================= */
-        #arrow-down {
-            position: absolute;
-            left: 50%;
-            bottom: 3%;
-            color: #fff;
-            font-size: 40px;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            margin-left: -16px;
-            z-index: 3;
-            visibility: visible;
-        }
-
-        #arrow-down:hover,
-        #arrow-down:focus {
-            color: #fff;
-        }
-        /*Arrow down ends here*/
-
-        /*About Estate company*/
-        #about {
-            height: 950px;
-        }
-
-        #about_image .front {
-            position: relative;
-            top: -350px;
-            left: 100px;
-            width: 390px;
-            z-index: 1;
-        }
-
-        #about_image .back {
-            position: relative;
-            top: 80px;
-            left: 60px;
-            width: 480px;
-        }
-
-        #about_text {
-            position: relative;
-            top: -440px;
-            left: 15px;
-            width: 650px;
-        }
-
-        #about_text h2 {
-            position: relative;
-            top: -490px;
-            font-size: 40px;
-            line-height: 50px;
-            width: 450px;
-        }
-
-        #about_text p {
-            position: relative;
-            left: -2px;
-            font-size: 15px;
-            padding-bottom: 0;
-            line-height: 30px;
-        }
-
-        #about_text p span{
-            position: relative;
-            top: 20px;
-        }
-
-        #about_text .about_btn a {
-            font-size: 13px;
-        }
-        
-        /*Estate section*/
-
-        #estate {
-            height: 2150px;
-            margin-top: 100px;
-        }
-
-        #estate_header h2 {
-            position: relative;
-            top: -60px;
-            left: 10px;
-            width: 762px;
-            height: 67px;
-            font-size: 40px;
-            width: 550px;
-            line-height: 50px;
-        }
-
-        #estate_header p {
-            position: relative;
-            top: -40px;
-            left: 10px;
-            font-size: 15px;
-            line-height: 23px;
-            text-align: justify;
-            width: 650px;
-            padding: 20px 0;
-        }
-
-        #estate_view_1 {
-            position: relative;
-            top: -20px;
-            left: -20px;
-            width: 350px;
-        }
-
-        /*Sold/Available button posiition for estate view 1*/
-        #view_1 .image_btn_one a,
-        #view_2 .image_btn_two a,
-        #view_3 .image_btn_three a {
-            position: relative;
-            top: -245px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 1 ends here*/
-
-        #estate_view_1 img {
-            height: 260px;
-            width: 99%;
-        }
-
-        #view_1 {
-            width: 100%;
-            height: 520px;
-            margin-bottom: 60px;
-        }
-        #view_2 {
-            position: relative;
-            top: -580px;
-            left: 360px;
-            width: 100%;
-            height: 520px;
-            margin-bottom: 60px;
-        }
-        #view_3 {
-            position: relative;
-            top: -580px;
-            width: 100%;
-            height: 520px;
-            margin-bottom: 60px;
-        }
-        /*====================================
-        |  |  CSS that affect all section
-        =====================================*/
-        /*housing text for all estate*/
-        .housing_text_below h2 {
-            font-size: 20px;
-        }
-        .housing_text_below p {
-            font-size: 14px;
-        }
-        /*View button effect for all section and some for estate 1 section because of movement levels*/
-        .view_btn a {
-            position: relative;
-            top: 5px;
-            left: -5px;
-            padding: 8px 60px;
-            font-size: 9px;
-        }
-
-        /*View button for estate 2 section because of movement levels*/
-        #estate_view_2 .view_btn a {
-            position: relative;
-            top: 5px;
-        }
-        /*======ends here================*/
-
-        #estate_view_2 {
-            position: relative;
-            top: -80px;
-            left: -80px;
-            width: 350px;
-        }
-
-        /*Sold/Available button posiition for estate view 2*/
-        #view_4 .image_btn_four a,
-        #view_5 .image_btn_five a,
-        #view_6 .image_btn_six a {
-            position: relative;
-            top: -245px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 2 ends here*/
-
-        #estate_view_2 img {
-            height: 260px;
-            width: 99%;
-        }
-        #view_4 {
-            position: relative;
-            left: 420px;
-            width: 100%;
-            height: 520px;
-        }
-        #view_5 {
-            position: relative;
-            top: 60px;
-            left: 60px;
-            width: 100%;
-            height: 520px;
-        }
-        #view_6 {
-            position: relative;
-            top: -460px;
-            left: 420px;
-            width: 100%;
-            height: 520px;
-        }
-
-        /*Estate down button*/
-        .estate_header_btn a {
-            position: relative;
-            top: 450px;
-            left: 300px;
-        }
-
-        /*Stats*/
-        #stats {
-            height: 850px;
-        }
-
-        #stats .content-box-md {
-            height: 850px;
-        }
-
-        #stats .first_stats {
-            height: 100px;
-            width: 290px;
-            top: -20px;
-            left: 220px;
-            padding: 20px;
-        }
-
-        #stats .second_stats {
-            height: 100px;
-            width: 290px;
-            left: 220px;
-            top: 100px;
-            padding: 20px;
-        }
-
-        #stats .third_stats {
-            height: 100px;
-            width: 290px;
-            left: 220px;
-            top: 220px;
-            padding: 20px;
-        }
-
-        #stats .vertical-heading h2 {
-            font-size: 40px;
-            line-height: 40px;
-            padding-bottom: 10px;
-        }
-        
-        #stats .vertical-heading p {
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .stats-item i {
-            font-size: 30px;
-        }
-        
-        .stats-item h3 {
-            font-size: 30px;
-        }
-        
-        .stats-item p {
-            font-size: 15px;
-        }     
-
-        /*Contact us from continental location*/
-        #location {
-            height: 900px;
-        }
-
-        .location_text h2 {
-            font-size: 40px;
-            line-height: 60px;
-            left: -60px;
-        }
-
-        .location_text p {
-            top: -20px;
-            font-size: 15px;
-            left: 60px;
-            width: 580px;
-        }
-
-        #location .location_image {
-            position: relative;
-            width: 1300px;
-            top: -20px;
-            left: -150px;
-        }
-
-        /*Contact*/
-        
-        .contact_logo {
-            position: relative;
-            width: 150px;
-            top: -10px;
-            left: -5px;
-        }
-
-        .office {
-            top: 10px;
-            left: -5px;
-        }
-
-        .office-details {
-            font-size: 15px;
-            line-height: 33px;
-            width: 550px;
-            text-align: justify;
-        }
-        
-        /*Footer*/
-        footer {
-            padding: 5px;
-        }
-
-        footer p {
-            position: relative;
-            top: 14px;
-            left: -5px;
-            font-size: 15px;
-            
-        }
-
-        .footer_icons {
-            left:  -50px;
-            font-size: 20px;
-        }
-
-        .btn-back-to-top {
-            font-size: 20px;
-            z-index: 1;
-        }
-
-}
-
-/* Extra small Device (Landscape phones and Portrait Tablets) */
-@media (min-width: 631px) and (max-width: 698px) {
-
-    /*Navigation bar*/
-    .navbar-brand {
-        padding: 10px 10px;
-    }
-
-    .navbar-brand img {
-        position: relative;
-        top: -13px;
-        left: -15px;
-        width: 100px;
-        height: 60px;
-    }
-
-    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-    .navbar-nav {
-        display: none;
-    }
-
-    /*Mobile Menu button display*/
-    #mobile-nav-open-btn {
-        display: block;
-        left: 580px;
-        top: 5px;
-        font-size: 30px;
-        color: #7065f0
-    }
-
-    #mobile-nav-close-btn {
-        font-family: "Plus Jakarta Sans", "Open Sans";
-        font-size: 40px;
-        position: relative;
-        top: 1px;
-        left: 610px;
-    }
-
-    #mobile-nav a {
-        font-size: 18px;
-    }
-
-    /*Navigation bar*/
-    .navbar {
-        padding: 68x 0;
-    }
-    
-    /*Below is the "Reach Us! section" at the navigation bar css*/
-    .get_touch_btn a {
-        top: 10px;
-        left: 10px;
-        text-decoration: none;
-    }  
-    
-    /*Home section*/
-    #home {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
 
     #background_image img {
@@ -1821,27 +1403,29 @@
 
     /*767 is tablet screen size hence, I am using a medium picture of the home screen*/
     #background_image{
-        background-image: url('../img/home_page/estate_home_screen_medium.png');
+        position: absolute;
+        background-image: url('../img/home_page/main_page_photo_medium.jpg');
         height: 100%;
         width: 100%;
+        /* top: 80px; */
     }
 
     .home-screen h1 {
         position: relative;
-        top: 580px;
+        top: 690px;
         left: 190px;
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 70px;
         width: 550px;
     }
 
     .home-screen p {
         position: relative;
-        top: 490px;
+        top: 720px;
         left: 190px;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 25px;
-        width: 520px;
+        width: 550px;
         text-align: justify;
     }
 
@@ -1853,9 +1437,9 @@
         left: 50%;
         bottom: 3%;
         color: #fff;
-        font-size: 40px;
-        width: 32px;
-        height: 32px;
+        font-size: 45px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         margin-left: -16px;
         z-index: 3;
@@ -1868,207 +1452,65 @@
     }
     /*Arrow down ends here*/
 
-    /*About Estate company*/
-    #about {
-        height: 950px;
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+    #about1 {
+        position: relative;
+        top: -260px;
+        height: 900px;
+        margin-bottom: -800px;
     }
 
-    #about_image .front {
+    #about1_image .front {
         position: relative;
-        top: -350px;
-        left: 100px;
-        width: 390px;
+        top: 100px;
+        left: 20px;
+        width: 490px;
         z-index: 1;
     }
 
-    #about_image .back {
+    #about1_text h2 {
         position: relative;
-        top: 80px;
-        left: 60px;
-        width: 480px;
-    }
-
-    #about_text {
-        position: relative;
-        top: -440px;
-        left: 15px;
-        width: 580px;
-    }
-
-    #about_text h2 {
-        position: relative;
-        top: -490px;
+        top: -370px;
+        left: 20px;
         font-size: 40px;
-        line-height: 50px;
-        width: 450px;
+        line-height: 40px;
     }
 
-    #about_text p {
+    #about1_text p span {
         position: relative;
-        left: -2px;
+        top: 40px;
+    }
+
+    #about1_text p {
+        position: relative;
+        top: -40px;
+        left: 30px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 630px;
         font-size: 15px;
-        padding-bottom: 0;
         line-height: 30px;
     }
 
-    #about_text p span{
-        position: relative;
-        top: 20px;
-    }
-
-    #about_text .about_btn a {
-        font-size: 13px;
-    }
-    
-    /*Estate section*/
-
-    #estate {
-        height: 2150px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
-        position: relative;
-        top: -60px;
-        left: 10px;
-        width: 762px;
-        height: 67px;
-        font-size: 40px;
-        width: 550px;
-        line-height: 50px;
-    }
-
-    #estate_header p {
+    #about1_text .about_btn {
         position: relative;
         top: -40px;
-        left: 10px;
-        font-size: 15px;
-        line-height: 23px;
-        text-align: justify;
-        width: 580px;
-        padding: 20px 0;
+        left: 30px;
+        margin-top: 30px;
+        text-decoration: none;
     }
 
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -20px;
-        width: 320px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        position: relative;
-        top: -580px;
-        left: 320px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        position: relative;
-        top: -580px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 20px;
-    }
-    .housing_text_below p {
-        font-size: 14px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-        font-size: 9px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 5px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -80px;
-        left: -80px;
-        width: 320px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 99%;
-    }
-    #view_4 {
-        position: relative;
-        left: 380px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        position: relative;
-        top: 60px;
-        left: 60px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        position: relative;
-        top: -460px;
-        left: 380px;
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 450px;
-        left: 250px;
+    #about1_text .about_btn a {
+        font-size: 13px;
     }
 
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 550px;
+        height: 1500px;
     }
 
     #stats .content-box-md {
@@ -2079,14 +1521,14 @@
         height: 100px;
         width: 290px;
         top: -20px;
-        left: 180px;
+        left: 220px;
         padding: 20px;
     }
 
     #stats .second_stats {
         height: 100px;
         width: 290px;
-        left: 180px;
+        left: 220px;
         top: 100px;
         padding: 20px;
     }
@@ -2094,7 +1536,7 @@
     #stats .third_stats {
         height: 100px;
         width: 290px;
-        left: 180px;
+        left: 220px;
         top: 220px;
         padding: 20px;
     }
@@ -2122,42 +1564,162 @@
         font-size: 15px;
     }     
 
-    /*Contact us from continental location*/
-    #location {
-        height: 900px;
-    }
-
-    .location_text h2 {
-        font-size: 35px;
-        line-height: 60px;
-        left: -100px;
-    }
-
-    .location_text p {
-        top: -20px;
-        font-size: 15px;
-        left: 20px;
-        width: 580px;
-    }
-
-    #location .location_image {
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2 {
         position: relative;
-        width: 1300px;
+        top: -100px;
+        height: 900px;
+        margin-bottom: -100px;
+    }
+
+    #about2_image .front {
+        position: relative;
+        top: 90px;
+        left: 20px;
+        z-index: 1;
+        width: 490px;
+    }
+
+    #about2_text h2 {
+        position: relative;
+        top: -350px;
+        left: 20px;
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+
+    #about2_text p span {
+        position: relative;
+        top: 40px;
+    }
+
+    #about2_text p {
+        position: relative;
         top: -20px;
-        left: -150px;
+        left: 30px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 630px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    #about2_text .about_btn {
+        position: relative;
+        top: -20px;
+        left: 30px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+
+    #about2_text .about_btn a {
+        font-size: 13px;
     }
 
     /*Contact*/
     
     .contact_logo {
         position: relative;
-        width: 150px;
+        width: 190px;
+        top: -30px;
+        left: -5px;
+    }
+
+    .office {
+        top: -15px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 15px;
+        line-height: 33px;
+        width: 580px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -5px;
+        font-size: 15px;
+        
+    }
+
+    .footer_icons {
+        left:  -50px;
+        font-size: 20px;
+    }
+
+    .btn-back-to-top {
+        font-size: 20px;
+        z-index: 1;
+    }
+}
+
+/*==========Essential breakpoint for tab screen only===========*/
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+    @media (min-width: 631px) and (max-width: 698px) {
+
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 580px;
+        top: 5px;
+        font-size: 30px;
+        color: #7065f0
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 40px;
+        position: relative;
+        top: 1px;
+        left: 610px;
+    }
+
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+
+    #about1_text p {
+        width: 570px;
+    }
+
+    /*Stats*/
+    #stats .first_stats {
+        left: 200px;
+    }
+
+    #stats .second_stats {
+        left: 200px;
+    }
+
+    #stats .third_stats {
+        left: 200px;
+    }
+
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2_text p {
+        width: 570px;
+    }
+
+    /*Contact*/
+    
+    .contact_logo {
+        position: relative;
+        width: 190px;
         top: -10px;
         left: -5px;
     }
 
     .office {
-        top: 10px;
+        top: -5px;
         left: 5px;
     }
 
@@ -2193,26 +1755,10 @@
 
 }
 
+/*==========Essential breakpoint for tab screen only===========*/
 /* Extra small Device (Landscape phones and Portrait Tablets) */
+/*==========Essential breakpoint for small screen only===========*/
 @media (min-width: 563px) and (max-width: 630px) {
-
-    /*Navigation bar*/
-    .navbar-brand {
-        padding: 10px 10px;
-    }
-
-    .navbar-brand img {
-        position: relative;
-        top: -13px;
-        left: -15px;
-        width: 90px;
-        height: 60px;
-    }
-
-    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-    .navbar-nav {
-        display: none;
-    }
 
     /*Mobile Menu button display*/
     #mobile-nav-open-btn {
@@ -2231,56 +1777,180 @@
         left: 540px;
     }
 
-    #mobile-nav a {
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+
+    #about1_text p {
+        width: 500px;
+    }
+
+    /*Stats*/
+    #stats .first_stats {
+        left: 160px;
+    }
+
+    #stats .second_stats {
+        left: 160px;
+    }
+
+    #stats .third_stats {
+        left: 160px;
+    }
+
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2_text p {
+        width: 500px;
+    }
+
+    /*Contact*/
+    
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .office {
+        top: 10px;
+        left: -3px;
+    }
+
+    .office-details {
         font-size: 15px;
+        line-height: 30px;
+        width: 580px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -10px;
+        font-size: 13px;
+        
+    }
+
+    .footer_icons {
+        left:  -50px;
+        font-size: 18px;
+    }
+
+    .socials_icons {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+
+    .btn-back-to-top {
+        font-size: 20px;
+        z-index: 1;
+    }
+
+}
+
+
+/*======================================================
+========================================================
+======================================================*/
+/*The small home screen pics started from this screen size*/
+/*==The below media query holds functions that runs for all medium screen 346 - 562px,
+other intermediate screen after this for medium (tab and co) screen holds only essential breakpoints only*/
+/* Extra small Device (Portrait phones and Smaller devices) */
+@media (min-width: 346px) and (max-width: 562px) {
+
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
+
+    .navbar-brand img {
+        position: relative;
+        top: -5px;
+        left: -15px;
+        width: 120px;
+    }
+
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
+
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 430px;
+        top: 5px;
+        font-size: 25px;
+        color: #000038
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
+
+    #mobile-nav a {
+        font-size: 13px;
     }
 
     /*Navigation bar*/
     .navbar {
-        padding: 68x 0;
+        padding: 5px 0;
     }
-    
+
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        top: 10px;
-        left: 10px;
+        position: relative;
+        top: 20px;
+        left: 720px;
         text-decoration: none;
     }  
-    
+
     /*Home section*/
     #home {
         height: 100%;
         width: 100%;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
 
-    #background_image img {
+    #background_image img { 
         visibility: hidden;
     }
 
-    /*767 is tablet screen size hence, I am using a medium picture of the home screen*/
+    /*481 is extra small screen hence, I am using the small picture of the home screen*/
     #background_image{
-        background-image: url('../img/home_page/estate_home_screen_medium.png');
+        background-image: url('../img/home_page/main_page_photo_small.jpg');
         height: 100%;
         width: 100%;
     }
 
     .home-screen h1 {
         position: relative;
-        top: 580px;
-        left: 190px;
-        font-size: 40px;
-        line-height: 55px;
-        width: 520px;
+        top: 690px;
+        left: 175px;
+        font-size: 30px;
+        line-height: 50px;
+        width: 450px;
+        font-weight: 900;
     }
 
     .home-screen p {
         position: relative;
-        top: 490px;
-        left: 190px;
-        font-size: 15px;
+        top: 580px;
+        left: 175px;
+        font-size: 14px;
         line-height: 25px;
-        width: 520px;
+        width: 450px;
         text-align: justify;
     }
 
@@ -2292,12 +1962,12 @@
         left: 50%;
         bottom: 3%;
         color: #fff;
-        font-size: 40px;
-        width: 32px;
-        height: 32px;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         margin-left: -16px;
-        z-index: 3;
+        z-index: 1;
         visibility: visible;
     }
 
@@ -2307,208 +1977,83 @@
     }
     /*Arrow down ends here*/
 
-    /*About Estate company*/
-    #about {
-        height: 950px;
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+    #about1 {
+        position: relative;
+        top: -260px;
+        height: 900px;
+        margin-bottom: -800px;
     }
 
-    #about_image .front {
+    #about1_image .front {
         position: relative;
-        top: -350px;
-        left: 80px;
-        width: 390px;
+        top: 110px;
+        left: 5px;
+        width: 400px;
         z-index: 1;
     }
 
-    #about_image .back {
+    #about1_text h2 {
         position: relative;
-        top: 80px;
-        left: 30px;
-        width: 480px;
+        top: -300px;
+        left: 5px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
-    #about_text {
+    #about1_text p span {
         position: relative;
-        top: -440px;
-        left: 15px;
-        width: 520px;
+        top: 40px;
     }
 
-    #about_text h2 {
+    #about1_text p {
         position: relative;
-        top: -490px;
-        font-size: 40px;
-        line-height: 50px;
+        top: -20px;
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
         width: 450px;
-    }
-
-    #about_text p {
-        position: relative;
-        left: -2px;
-        font-size: 15px;
-        padding-bottom: 0;
+        font-size: 14px;
         line-height: 30px;
     }
 
-    #about_text p span{
+    #about1_text .about_btn {
         position: relative;
-        top: 20px;
-    }
-
-    #about_text .about_btn a {
-        font-size: 13px;
-    }
-    
-    /*Estate section*/
-
-    #estate {
-        height: 4300px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
-        position: relative;
-        top: -60px;
-        left: 10px;
-        width: 762px;
-        height: 67px;
-        font-size: 40px;
-        width: 550px;
-        line-height: 50px;
-    }
-
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: 10px;
-        font-size: 15px;
-        line-height: 23px;
-        text-align: justify;
-        width: 520px;
-        padding: 20px 0;
-    }
-
-    #estate_view_1 {
-        position: relative;
-        left: 10px;
         top: -20px;
-        width: 320px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
     }
 
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -330px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 350px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 16px;
-    }
-    .housing_text_below p {
-        font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-        position: relative;
-        top: 12px;
-        left: 20px;
-        padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: 1260px;
-        left: 10px;
-        width: 320px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -330px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 350px;
-        width: 99%;
-    }
-    #view_4 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-    #view_5 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-    #view_6 {
-        width: 500px;
-        height: 580px;
-        margin-bottom: 60px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 2560px;
-        left: 200px;
+    #about1_text .about_btn a {
+        font-size: 14px;
     }
 
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 550px;
+        height: 1550px;
     }
 
     #stats .content-box-md {
-        height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
         height: 100px;
         width: 290px;
         top: -20px;
-        left: 150px;
+        left: 120px;
         padding: 20px;
     }
 
     #stats .second_stats {
         height: 100px;
         width: 290px;
-        left: 150px;
+        left: 120px;
         top: 100px;
         padding: 20px;
     }
@@ -2516,7 +2061,7 @@
     #stats .third_stats {
         height: 100px;
         width: 290px;
-        left: 150px;
+        left: 120px;
         top: 220px;
         padding: 20px;
     }
@@ -2544,49 +2089,80 @@
         font-size: 15px;
     }     
 
-    /*Contact us from continental location*/
-    #location {
-        height: 900px;
-    }
-
-    .location_text h2 {
-        font-size: 32px;
-        line-height: 60px;
-        left: -140px;
-    }
-
-    .location_text p {
-        top: -20px;
-        font-size: 14px;
-        left: 5px;
-        width: 540px;
-    }
-
-    #location .location_image {
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2 {
         position: relative;
-        width: 1300px;
+        top: -100px;
+        height: 900px;
+        margin-bottom: -100px;
+    }
+
+    #about2_image .front {
+        position: relative;
+        top: 90px;
+        left: 5px;
+        z-index: 1;
+        width: 400px;
+    }
+
+    #about2_text h2 {
+        position: relative;
+        top: -300px;
+        left: 5px;
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    #about2_text p span {
+        position: relative;
+        top: 40px;
+    }
+
+    #about2_text p {
+        position: relative;
         top: -20px;
-        left: -300px;
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 450px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #about2_text .about_btn {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+
+    #about2_text .about_btn a {
+        font-size: 14px;
     }
 
     /*Contact*/
-    
-    .contact_logo {
-        position: relative;
-        width: 150px;
-        top: -10px;
-        left: -10px;
+    #contact {
+        height: 470px;
     }
 
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -20px;
+        left: -15px;
+    }
+    
     .office {
-        top: 10px;
-        left: -3px;
+        position: relative;
+        top: 5px;
+        left: -5px;
     }
 
     .office-details {
-        font-size: 15px;
-        line-height: 30px;
-        width: 550px;
+        font-size: 14px;
+        line-height: 25px;
+        width: 470px;
         text-align: justify;
     }
     
@@ -2597,947 +2173,147 @@
 
     footer p {
         position: relative;
-        top: 14px;
-        left: -15px;
-        font-size: 13px;
-        
-    }
-
-    .footer_icons {
-        left:  -50px;
-        font-size: 18px;
-    }
-
-    .socials_icons {
-        padding-left: 10px;
-        padding-right: 10px;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
     }
     
-
-    .btn-back-to-top {
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -320px;
         font-size: 20px;
-        z-index: 1;
+        text-align: right;
     }
 
-}
-
-/*The small home screen pics started from this screen size*/
-/* Extra small Device (Portrait phones and Smaller devices) */
-@media (min-width: 481px) and (max-width: 562px) {
-
-        /*Navigation bar*/
-        .navbar-brand {
-            padding: 10px 10px;
-        }
-
-        .navbar-brand img {
-            position: relative;
-            top: -5px;
-            left: -15px;
-            width: 65px;
-            height: 40px;
-        }
-
-        /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-        .navbar-nav {
-            display: none;
-        }
-
-        /*Mobile Menu button display*/
-        #mobile-nav-open-btn {
-            display: block;
-            left: 430px;
-            top: 5px;
-            font-size: 25px;
-            color: #7065f0
-        }
-
-        #mobile-nav-close-btn {
-            font-family: "Plus Jakarta Sans", "Open Sans";
-            font-size: 35px;
-            position: absolute;
-            top: -2px;
-            right: 13px;
-        }
-
-        #mobile-nav a {
-            font-size: 13px;
-        }
-
-        /*Navigation bar*/
-        .navbar {
-            padding: 5px 0;
-        }
-
-        /*Below is the "Reach Us! section" at the navigation bar css*/
-        .get_touch_btn a {
-            top: 10px;
-            left: 10px;
-            text-decoration: none;
-        }  
-
-        /*Home section*/
-        #home {
-            height: 100%;
-            width: 100%;
-            margin-bottom: 100px;
-        }
-
-        #background_image img { 
-            visibility: hidden;
-        }
-
-        /*481 is extra small screen hence, I am using the small picture of the home screen*/
-        #background_image{
-            background-image: url('../img/home_page/main_page_photo_small.jpg');
-            height: 100%;
-            width: 100%;
-        }
-
-        .home-screen h1 {
-            position: relative;
-            top: 580px;
-            left: 175px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 450px;
-        }
-
-        .home-screen p {
-            position: relative;
-            top: 500px;
-            left: 175px;
-            font-size: 13px;
-            line-height: 25px;
-            width: 450px;
-            text-align: justify;
-        }
-
-        /* ======================================
-        |   |   |   Arrow down which displays only from this mobile view
-        ========================================= */
-        #arrow-down {
-            position: absolute;
-            left: 50%;
-            bottom: 3%;
-            color: #fff;
-            font-size: 30px;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            margin-left: -16px;
-            z-index: 1;
-            visibility: visible;
-        }
-
-        #arrow-down:hover,
-        #arrow-down:focus {
-            color: #fff;
-        }
-        /*Arrow down ends here*/
-
-        /*About Estate company*/
-        #about {
-            height: 720px;
-        }
-
-        #about_image .front {
-            position: relative;
-            top: -260px;
-            left: 80px;
-            width: 270px;
-            height: 285px;
-            z-index: 1;
-        }
-
-        #about_image .back {
-            position: relative;
-            top: 40px;
-            left: 60px;
-            width: 310px;
-            height: 314px;
-        }
-
-        #about_text {
-            position: relative;
-            top: -380px;
-            width: 450px;
-        }
-
-        #about_text h2 {
-            position: relative;
-            top: -290px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 445px;
-        }
-
-        #about_text p {
-            font-size: 13px;
-            padding-bottom: 0;
-            line-height: 23px;
-        }
-
-        #about_text p span{
-            position: relative;
-            top: 20px;
-        }
-
-        #about_text .about_btn a {
-            font-size: 11px;
-        }
-        
-        /*Estate section*/
-
-        #estate {
-            height: 4300px;
-            margin-top: 100px;
-        }
-
-        #estate_header h2 {
-            position: relative;
-            top: -65px;
-            left: -5px;
-            width: 762px;
-            height: 67px;
-            font-size: 30px;
-            width: 300px;
-            line-height: 40px;
-        }
-
-        #estate_header p {
-            position: relative;
-            top: -40px;
-            left: -5px;
-            font-size: 13px;
-            line-height: 23px;
-            text-align: justify;
-            width: 450px;
-        }
-
-        #estate_view_1 {
-            position: relative;
-            left: 10px;
-            top: -20px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 1*/
-        #view_1 .image_btn_one a,
-        #view_2 .image_btn_two a,
-        #view_3 .image_btn_three a {
-            position: relative;
-            top: -345px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 1 ends here*/
-
-        #estate_view_1 img {
-            height: 360px;
-            width: 99%;
-        }
-
-        #view_1 {
-            width: 420px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-        #view_2 {
-            width: 420px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-        #view_3 {
-            width: 420px;
-            height: 620px;
-            margin-bottom: 60px;
-        }
-        /*====================================
-        |  |  CSS that affect all section
-        =====================================*/
-        /*housing text for all estate*/
-        .housing_text_below h2 {
-            font-size: 16px;
-        }
-        .housing_text_below p {
-            font-size: 13px;
-        }
-        /*button for all section*/
-        .view_btn a {
-            position: relative;
-            top: 12px;
-            left: 20px;
-            padding: 8px 80px;
-        }
-        /*======ends here================*/
-
-        #estate_view_2 {
-            position: relative;
-            top: 1300px;
-            left: 10px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 2*/
-        #view_4 .image_btn_four a,
-        #view_5 .image_btn_five a,
-        #view_6 .image_btn_six a {
-            position: relative;
-            top: -345px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 2 ends here*/
-
-        #estate_view_2 img {
-            height: 360px;
-            width: 99%;
-        }
-        #view_4 {
-            width: 420px;
-            height: 610px;
-            margin-bottom: 60px;
-        }
-        #view_5 {
-            width: 420px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-        #view_6 {
-            width: 420px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-
-        /*Estate down button*/
-        .estate_header_btn a {
-            position: relative;
-            top: 2600px;
-            left: 150px;
-            font-size: 15px;
-        }
-
-        /*Stats*/
-        #stats {
-            height: 850px;
-        }
-
-        #stats .content-box-md {
-            height: 850px;
-        }
-
-        #stats .first_stats {
-            height: 100px;
-            width: 260px;
-            top: -20px;
-            left: 110px;
-            padding: 20px;
-        }
-
-        #stats .second_stats {
-            height: 100px;
-            width: 260px;
-            left: 110px;
-            top: 80px;
-            padding: 20px;
-        }
-
-        #stats .third_stats {
-            height: 100px;
-            width: 260px;
-            left: 110px;
-            top: 180px;
-            padding: 20px;
-        }
-
-        #stats .vertical-heading h2 {
-            font-size: 30px;
-            line-height: 40px;
-            padding-bottom: 10px;
-        }
-        
-        #stats .vertical-heading p {
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        .stats-item i {
-            font-size: 25px;
-        }
-        
-        .stats-item h3 {
-            font-size: 25px;
-        }
-        
-        .stats-item p {
-            font-size: 12px;
-        }    
-
-        /*Contact us from continental location*/
-        #location {
-            height: 800px;
-        }
-        
-        .location_text h2 {
-            position: relative;
-            left: -10px;
-            top: -100px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 500px;
-        }
-        
-        .location_text p {
-            position: relative;
-            left: -5px;
-            top: -90px;
-            font-size: 13px;
-            width: 480px;
-            line-height: 25px;
-        }
-
-        #location .location_image {
-            position: relative;
-            width: 1100px;
-            top: -80px;
-            left: -300px;
-        }
-
-        .location_tag .location_2 {
-            position: relative;
-            top: 440px;
-            left: 100px;
-            z-index: 1;
-        }
-
-        .location_tag .location_3 {
-            position: relative;
-            top: 520px;
-            left: 120px;
-            z-index: 1;
-        }
-
-
-        /*Contact*/
-        #contact {
-            height: 440px;
-        }
-
-        .contact_logo {
-            position: relative;
-            width: 120px;
-            top: -40px;
-            left: 10px;
-        }
-        
-        .office {
-            position: relative;
-            top: 10px;
-            left: -5px;
-        }
-
-        .office-details {
-            font-size: 13px;
-            line-height: 25px;
-            width: 350px;
-            text-align: justify;
-        }
-        
-        /*Footer*/
-        footer {
-            padding: 5px;
-        }
-
-        footer p {
-            position: relative;
-            top: 15px;
-            left: -10px;
-            font-size: 12px;
-            width: 350px;
-        }
-        
-        .footer_icons {
-            position: relative;
-            top: -60px;
-            left:  -320px;
-            font-size: 20px;
-            text-align: right;
-        }
-
-        .btn-back-to-top {
-            font-size: 18px;
-            z-index: 1;
-        }
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
 
 }
 
 /* Extra small Device - Large mobile (Portrait phones and Smaller devices) */
 @media (min-width: 413px) and (max-width: 480px) {
 
-        /*Navigation bar*/
-        .navbar-brand {
-            padding: 10px 10px;
-        }
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 360px;
+        top: 5px;
+        font-size: 25px;
+        color: #7065f0
+    }
 
-        .navbar-brand img {
-            position: relative;
-            top: -5px;
-            left: -15px;
-            width: 65px;
-            height: 40px;
-        }
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
 
-        /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-        .navbar-nav {
-            display: none;
-        }
+    .home-screen h1 {
+        width: 420px;
+    }
 
-        /*Mobile Menu button display*/
-        #mobile-nav-open-btn {
-            display: block;
-            left: 360px;
-            top: 5px;
-            font-size: 25px;
-            color: #7065f0
-        }
+    .home-screen p {
+        position: relative;
+        top: 610px;
+        width: 400px;
+    }
 
-        #mobile-nav-close-btn {
-            font-family: "Plus Jakarta Sans", "Open Sans";
-            font-size: 35px;
-            position: absolute;
-            top: -2px;
-            right: 13px;
-        }
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
 
-        #mobile-nav a {
-            font-size: 13px;
-        }
+    #about1_image .front {
+        width: 380px;
+    }    
 
-        /*Navigation bar*/
-        .navbar {
-            padding: 5px 0;
-        }
+    #about1_text p {
+        width: 380px;
+    }
 
-        /*Below is the "Reach Us! section" at the navigation bar css*/
-        .get_touch_btn a {
-            top: 10px;
-            left: 10px;
-            text-decoration: none;
-        }  
+    /*Stats*/
+    #stats .first_stats {
+        left: 80px;
+    }
 
-        /*Home section*/
-        #home {
-            height: 100%;
-            width: 100%;
-            margin-bottom: 100px;
-        }
+    #stats .second_stats {
+        left: 80px;
+    }
 
-        #background_image img { 
-            visibility: hidden;
-        }
+    #stats .third_stats {
+        left: 80px;
+    }
 
-        /*481 is extra small screen hence, I am using the small picture of the home screen*/
-        #background_image{
-            background-image: url('../img/home_page/main_page_photo_small.jpg');
-            height: 100%;
-            width: 100%;
-        }
+    /*======About section 2 which is MILESTONE below stats====*/
 
-        .home-screen h1 {
-            position: relative;
-            top: 580px;
-            left: 175px;
-            font-size: 29px;
-            line-height: 40px;
-            width: 390px;
-        }
+    #about2_image .front {
+        width: 380px;
+    }
 
-        .home-screen p {
-            position: relative;
-            top: 500px;
-            left: 175px;
-            font-size: 13px;
-            line-height: 25px;
-            width: 380px;
-            text-align: justify;
-        }
+    #about2_text p {
+        width: 380px;
+    }
+    
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
 
-        /* ======================================
-        |   |   |   Arrow down which displays only from this mobile view
-        ========================================= */
-        #arrow-down {
-            position: absolute;
-            left: 50%;
-            bottom: 3%;
-            color: #fff;
-            font-size: 30px;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            margin-left: -16px;
-            z-index: 1;
-            visibility: visible;
-        }
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -70px;
+        left: -15px;
+    }
+    
+    .office {
+        position: relative;
+        top: -40px;
+        left: -5px;
+    }
 
-        #arrow-down:hover,
-        #arrow-down:focus {
-            color: #fff;
-        }
-        /*Arrow down ends here*/
+    .office-details {
+        font-size: 14px;
+        line-height: 25px;
+        width: 390px;
+        text-align: justify;
+    }
+    
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
 
-        /*About Estate company*/
-        #about {
-            height: 720px;
-        }
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+    
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -280px;
+        font-size: 20px;
+        text-align: right;
+    }
 
-        #about_image .front {
-            position: relative;
-            top: -260px;
-            left: 60px;
-            width: 270px;
-            height: 285px;
-            z-index: 1;
-        }
-
-        #about_image .back {
-            position: relative;
-            top: 40px;
-            left: 40px;
-            width: 310px;
-            height: 314px;
-        }
-
-        #about_text {
-            position: relative;
-            top: -380px;
-            width: 380px;
-        }
-
-        #about_text h2 {
-            position: relative;
-            top: -290px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 350px;
-        }
-
-        #about_text p {
-            font-size: 13px;
-            padding-bottom: 0;
-            line-height: 23px;
-        }
-
-        #about_text p span{
-            position: relative;
-            top: 20px;
-        }
-
-        #about_text .about_btn a {
-            font-size: 11px;
-        }
-        
-        /*Estate section*/
-
-        #estate {
-            height: 4300px;
-            margin-top: 100px;
-        }
-
-        #estate_header h2 {
-            position: relative;
-            top: -65px;
-            left: -5px;
-            width: 762px;
-            height: 67px;
-            font-size: 30px;
-            width: 300px;
-            line-height: 40px;
-        }
-
-        #estate_header p {
-            position: relative;
-            top: -40px;
-            left: -5px;
-            font-size: 13px;
-            line-height: 23px;
-            text-align: justify;
-            width: 380px;
-        }
-
-        #estate_view_1 {
-            position: relative;
-            left: -25px;
-            top: -20px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 1*/
-        #view_1 .image_btn_one a,
-        #view_2 .image_btn_two a,
-        #view_3 .image_btn_three a {
-            position: relative;
-            top: -345px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 1 ends here*/
-
-        #estate_view_1 img {
-            height: 360px;
-            width: 99%;
-        }
-
-        #view_1 {
-            width: 390px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-        #view_2 {
-            width: 390px;
-            height: 620px;
-            margin-bottom: 60px;
-        }
-        #view_3 {
-            width: 390px;
-            height: 620px;
-            margin-bottom: 60px;
-        }
-        /*====================================
-        |  |  CSS that affect all section
-        =====================================*/
-        /*housing text for all estate*/
-        .housing_text_below h2 {
-            font-size: 16px;
-        }
-        .housing_text_below p {
-            font-size: 13px;
-        }
-        /*button for all section*/
-        .view_btn a {
-            position: relative;
-            top: 12px;
-            left: 20px;
-            padding: 8px 80px;
-        }
-        /*======ends here================*/
-
-        #estate_view_2 {
-            position: relative;
-            top: 1360px;
-            left: -20px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 2*/
-        #view_4 .image_btn_four a,
-        #view_5 .image_btn_five a,
-        #view_6 .image_btn_six a {
-            position: relative;
-            top: -345px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 2 ends here*/
-
-        #estate_view_2 img {
-            height: 360px;
-            width: 99%;
-        }
-        #view_4 {
-            width: 390px;
-            height: 610px;
-            margin-bottom: 60px;
-        }
-        #view_5 {
-            width: 390px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-        #view_6 {
-            width: 390px;
-            height: 590px;
-            margin-bottom: 60px;
-        }
-
-        /*Estate down button*/
-        .estate_header_btn a {
-            position: relative;
-            top: 2640px;
-            left: 120px;
-            font-size: 15px;
-        }
-
-        /*Stats*/
-        #stats {
-            height: 850px;
-        }
-
-        #stats .content-box-md {
-            height: 850px;
-        }
-
-        #stats .first_stats {
-            height: 100px;
-            width: 260px;
-            top: -20px;
-            left: 90px;
-            padding: 20px;
-        }
-
-        #stats .second_stats {
-            height: 100px;
-            width: 260px;
-            left: 90px;
-            top: 80px;
-            padding: 20px;
-        }
-
-        #stats .third_stats {
-            height: 100px;
-            width: 260px;
-            left: 90px;
-            top: 180px;
-            padding: 20px;
-        }
-
-        #stats .vertical-heading h2 {
-            font-size: 30px;
-            line-height: 40px;
-            padding-bottom: 10px;
-        }
-        
-        #stats .vertical-heading p {
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        .stats-item i {
-            font-size: 25px;
-        }
-        
-        .stats-item h3 {
-            font-size: 25px;
-        }
-        
-        .stats-item p {
-            font-size: 12px;
-        }    
-
-        /*Contact us from continental location*/
-        #location {
-            height: 800px;
-        }
-        
-        .location_text h2 {
-            position: relative;
-            left: -5px;
-            top: -100px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 380px;
-        }
-        
-        .location_text p {
-            position: relative;
-            left: -10px;
-            top: -90px;
-            font-size: 13px;
-            width: 380px;
-            line-height: 25px;
-        }
-
-        #location .location_image {
-            position: relative;
-            width: 1100px;
-            top: -80px;
-            left: -300px;
-        }
-
-        .location_tag .location_2 {
-            position: relative;
-            top: 440px;
-            left: 100px;
-            z-index: 1;
-        }
-
-        .location_tag .location_3 {
-            position: relative;
-            top: 520px;
-            left: 120px;
-            z-index: 1;
-        }
-
-
-        /*Contact*/
-        #contact {
-            height: 440px;
-        }
-
-        .contact_logo {
-            position: relative;
-            width: 120px;
-            top: -40px;
-            left: 10px;
-        }
-        
-        .office {
-            position: relative;
-            top: 10px;
-            left: -5px;
-        }
-
-        .office-details {
-            font-size: 13px;
-            line-height: 25px;
-            width: 350px;
-            text-align: justify;
-        }
-        
-        /*Footer*/
-        footer {
-            padding: 5px;
-        }
-
-        footer p {
-            position: relative;
-            top: 15px;
-            left: -10px;
-            font-size: 12px;
-            width: 350px;
-        }
-        
-        .footer_icons {
-            position: relative;
-            top: -60px;
-            left:  -280px;
-            font-size: 20px;
-            text-align: right;
-        }
-
-        .btn-back-to-top {
-            font-size: 18px;
-            z-index: 1;
-        }
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
 
 }
 
 /* Extra small Device - Medium mobile (Portrait phones and Smaller devices) */
 @media (min-width: 346px) and (max-width: 412px) {
-
-    /*Navigation bar*/
-.navbar-brand {
-    padding: 10px 10px;
-}
-
-.navbar-brand img {
-    position: relative;
-    top: -5px;
-    left: -15px;
-    width: 65px;
-    height: 40px;
-}
-
-/*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-.navbar-nav {
-    display: none;
-}
 
 /*Mobile Menu button display*/
 #mobile-nav-open-btn {
@@ -3560,409 +2336,118 @@
     font-size: 13px;
 }
 
-/*Navigation bar*/
-.navbar {
-    padding: 5px 0;
-}
-
-/*Below is the "Reach Us! section" at the navigation bar css*/
-.get_touch_btn a {
-    top: 10px;
-    left: 10px;
-    text-decoration: none;
-}  
-
 /*Home section*/
-#home {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-#background_image img { 
-    visibility: hidden;
-}
-
-/*481 is extra small screen hence, I am using the small picture of the home screen*/
-#background_image{
-    background-image: url('../img/home_page/main_page_photo_small.jpg');
-    height: 100%;
-    width: 100%;
-}
-
 .home-screen h1 {
-    position: relative;
-    top: 580px;
-    left: 175px;
-    font-size: 30px;
-    line-height: 40px;
     width: 360px;
 }
 
 .home-screen p {
     position: relative;
-    top: 500px;
-    left: 175px;
-    font-size: 13px;
-    line-height: 25px;
-    width: 330px;
-    text-align: justify;
-}
-
-/* ======================================
-|   |   |   Arrow down which displays only from this mobile view
-========================================= */
-#arrow-down {
-    position: absolute;
-    left: 50%;
-    bottom: 3%;
-    color: #fff;
-    font-size: 30px;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    margin-left: -16px;
-    z-index: 1;
-    visibility: visible;
-}
-
-#arrow-down:hover,
-#arrow-down:focus {
-    color: #fff;
-}
-/*Arrow down ends here*/
-
-/*About Estate company*/
-#about {
-    height: 720px;
-}
-
-#about_image .front {
-    position: relative;
-    top: -260px;
-    left: 40px;
-    width: 270px;
-    height: 285px;
-    z-index: 1;
-}
-
-#about_image .back {
-    position: relative;
-    top: 40px;
-    left: 20px;
-    width: 310px;
-    height: 314px;
-}
-
-#about_text {
-    position: relative;
-    top: -380px;
-    width: 320px;
-}
-
-#about_text h2 {
-    position: relative;
-    top: -290px;
-    font-size: 30px;
-    line-height: 40px;
-    width: 350px;
-}
-
-#about_text p {
-    font-size: 13px;
-    padding-bottom: 0;
-    line-height: 23px;
-}
-
-#about_text p span{
-    position: relative;
-    top: 20px;
-}
-
-#about_text .about_btn a {
-    font-size: 11px;
-}
-
-/*Estate section*/
-
-#estate {
-    height: 4300px;
-    margin-top: 100px;
-}
-
-#estate_header h2 {
-    position: relative;
-    top: -65px;
-    left: -5px;
-    width: 762px;
-    height: 67px;
-    font-size: 30px;
-    width: 300px;
-    line-height: 40px;
-}
-
-#estate_header p {
-    position: relative;
-    top: -40px;
-    left: -5px;
-    font-size: 13px;
-    line-height: 23px;
-    text-align: justify;
+    top: 630px;
     width: 330px;
 }
 
-#estate_view_1 {
-    position: relative;
-    left: -20px;
-    top: -20px;
-    width: 1000px;
-}
+/*===================================
+    |  |  About Energy company
+    ====================================*/
 
-/*Sold/Available button posiition for estate view 1*/
-#view_1 .image_btn_one a,
-#view_2 .image_btn_two a,
-#view_3 .image_btn_three a {
-    position: relative;
-    top: -345px;
-    left: 10px;
-}
-/*Sold/Available for estate view 1 ends here*/
+    #about1_image .front {
+        width: 310px;
+    }    
 
-#estate_view_1 img {
-    height: 360px;
-    width: 99%;
-}
+    #about1_text h2 {
+        position: relative;
+        top: -250px;
+    }
 
-#view_1 {
-    width: 330px;
-    height: 590px;
-    margin-bottom: 60px;
-}
-#view_2 {
-    width: 330px;
-    height: 620px;
-    margin-bottom: 60px;
-}
-#view_3 {
-    width: 330px;
-    height: 620px;
-    margin-bottom: 60px;
-}
-/*====================================
-|  |  CSS that affect all section
-=====================================*/
-/*housing text for all estate*/
-.housing_text_below h2 {
-    font-size: 16px;
-}
-.housing_text_below p {
-    font-size: 13px;
-}
-/*button for all section*/
-.view_btn a {
-    position: relative;
-    top: 12px;
-    left: 20px;
-    padding: 8px 80px;
-}
-/*======ends here================*/
+    #about1_text p {
+        width: 310px;
+    }
 
-#estate_view_2 {
-    position: relative;
-    top: 1360px;
-    left: -25px;
-    width: 1000px;
-}
+    /*Stats*/
+    #stats .first_stats {
+        left: 40px;
+    }
 
-/*Sold/Available button posiition for estate view 2*/
-#view_4 .image_btn_four a,
-#view_5 .image_btn_five a,
-#view_6 .image_btn_six a {
-    position: relative;
-    top: -345px;
-    left: 10px;
-}
-/*Sold/Available for estate view 2 ends here*/
+    #stats .second_stats {
+        left: 40px;
+    }
 
-#estate_view_2 img {
-    height: 360px;
-    width: 99%;
-}
-#view_4 {
-    width: 330px;
-    height: 610px;
-    margin-bottom: 60px;
-}
-#view_5 {
-    width: 330px;
-    height: 590px;
-    margin-bottom: 60px;
-}
-#view_6 {
-    width: 330px;
-    height: 610px;
-    margin-bottom: 60px;
-}
+    #stats .third_stats {
+        left: 40px;
+    }
 
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 2660px;
-    left: 90px;
-    font-size: 15px;
-}
+    /*======About section 2 which is MILESTONE below stats====*/
 
-/*Stats*/
-#stats {
-    height: 850px;
-}
+    #about2_image .front {
+        width: 310px;
+    }
 
-#stats .content-box-md {
-    height: 850px;
-}
+    #about2_text h2 {
+        position: relative;
+        top: -250px;
+    }
 
-#stats .first_stats {
-    height: 100px;
-    width: 260px;
-    top: -20px;
-    left: 60px;
-    padding: 20px;
-}
+    #about2_text p {
+        position: relative;
+        top: -5px;
+        width: 310px;
+    }
 
-#stats .second_stats {
-    height: 100px;
-    width: 260px;
-    left: 60px;
-    top: 80px;
-    padding: 20px;
-}
+    #about2_text .about_btn {
+        position: relative;
+        top: -10px;
+    }
 
-#stats .third_stats {
-    height: 100px;
-    width: 260px;
-    left: 60px;
-    top: 180px;
-    padding: 20px;
-}
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
 
-#stats .vertical-heading h2 {
-    font-size: 30px;
-    line-height: 40px;
-    padding-bottom: 10px;
-}
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -90px;
+        left: -10px;
+    }
 
-#stats .vertical-heading p {
-    font-size: 13px;
-    line-height: 20px;
-}
+    .office {
+        position: relative;
+        top: -70px;
+        left: -5px;
+    }
 
-.stats-item i {
-    font-size: 25px;
-}
+    .office-details {
+        line-height: 25px;
+        width: 330px;
+        text-align: justify;
+    }
 
-.stats-item h3 {
-    font-size: 25px;
-}
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
 
-.stats-item p {
-    font-size: 12px;
-}    
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
 
-/*Contact us from continental location*/
-#location {
-    height: 800px;
-}
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -210px;
+        font-size: 20px;
+        text-align: right;
+    }
 
-.location_text h2 {
-    position: relative;
-    left: -20px;
-    top: -100px;
-    font-size: 30px;
-    line-height: 40px;
-    width: 360px;
-}
-
-.location_text p {
-    position: relative;
-    left: -5px;
-    top: -90px;
-    font-size: 13px;
-    width: 330px;
-    line-height: 25px;
-}
-
-#location .location_image {
-    position: relative;
-    width: 1100px;
-    top: -80px;
-    left: -300px;
-}
-
-.location_tag .location_2 {
-    position: relative;
-    top: 440px;
-    left: 100px;
-    z-index: 1;
-}
-
-.location_tag .location_3 {
-    position: relative;
-    top: 520px;
-    left: 120px;
-    z-index: 1;
-}
-
-
-/*Contact*/
-#contact {
-    height: 440px;
-}
-
-.contact_logo {
-    position: relative;
-    width: 120px;
-    top: -40px;
-    left: 10px;
-}
-
-.office {
-    position: relative;
-    top: 10px;
-    left: -5px;
-}
-
-.office-details {
-    font-size: 13px;
-    line-height: 25px;
-    width: 330px;
-    text-align: justify;
-}
-
-/*Footer*/
-footer {
-    padding: 5px;
-}
-
-footer p {
-    position: relative;
-    top: 15px;
-    left: -10px;
-    font-size: 12px;
-    width: 350px;
-}
-
-.footer_icons {
-    position: relative;
-    top: -60px;
-    left:  -210px;
-    font-size: 20px;
-    text-align: right;
-}
-
-.btn-back-to-top {
-    font-size: 18px;
-    z-index: 1;
-}
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
 
 }
 
@@ -3978,8 +2463,7 @@ footer p {
         position: relative;
         top: -5px;
         left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -3993,7 +2477,7 @@ footer p {
         left: 300px;
         top: 5px;
         font-size: 25px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -4015,8 +2499,9 @@ footer p {
 
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        top: 10px;
-        left: 10px;
+        position: relative;
+        top: 20px;
+        left: 720px;
         text-decoration: none;
     }  
 
@@ -4024,7 +2509,7 @@ footer p {
     #home {
         height: 100%;
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
     }
 
     #background_image img {
@@ -4040,16 +2525,17 @@ footer p {
 
     .home-screen h1 {
         position: relative;
-        top: 580px;
+        top: 690px;
         left: 175px;
         font-size: 30px;
         line-height: 40px;
         width: 350px;
+        font-weight: 900;
     }
 
     .home-screen p {
         position: relative;
-        top: 500px;
+        top: 580px;
         left: 175px;
         font-size: 13px;
         line-height: 25px;
@@ -4066,8 +2552,8 @@ footer p {
         bottom: 3%;
         color: #fff;
         font-size: 30px;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         margin-left: -16px;
         z-index: 1;
@@ -4080,193 +2566,69 @@ footer p {
     }
     /*Arrow down ends here*/
 
-    /*About Estate company*/
-    #about {
-        height: 720px;
-    }
-
-    #about_image .front {
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+    #about1 {
         position: relative;
         top: -260px;
-        left: 25px;
-        width: 270px;
-        height: 285px;
+        height: 900px;
+        margin-bottom: -800px;
+    }
+
+    #about1_image .front {
+        position: relative;
+        top: 110px;
+        left: 5px;
+        width: 310px;
         z-index: 1;
     }
 
-    #about_image .back {
+    #about1_text h2 {
+        position: relative;
+        top: -260px;
+        left: 5px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #about1_text p span {
         position: relative;
         top: 40px;
-        left: 10px;
-        width: 310px;
-        height: 314px;
     }
 
-    #about_text {
+    #about1_text p {
         position: relative;
-        top: -380px;
-        width: 330px;
-    }
-
-    #about_text h2 {
-        position: relative;
-        top: -290px;
-        font-size: 30px;
-        line-height: 40px;
-        width: 350px;
-    }
-
-    #about_text p {
-        font-size: 13px;
-        padding-bottom: 0;
-        line-height: 23px;
-    }
-
-    #about_text p span{
-        position: relative;
-        top: 20px;
-    }
-
-    #about_text .about_btn a {
-        font-size: 11px;
-    }
-    
-        /*Estate section*/
-
-    #estate {
-        height: 3800px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
-        position: relative;
-        top: -65px;
-        left: -5px;
-        width: 762px;
-        height: 67px;
-        font-size: 30px;
-        width: 300px;
-        line-height: 40px;
-    }
-
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: -5px;
-        font-size: 13px;
-        line-height: 23px;
-        text-align: justify;
-        width: 330px;
-    }
-
-    #estate_view_1 {
-        position: relative;
-        left: -18px;
         top: -20px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 320px;
-        height: 490px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 320px;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 320px;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 16px;
-    }
-    .housing_text_below p {
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 310px;
         font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-        position: relative;
-        top: 12px;
-        left: 20px;
-        padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: 1050px;
-        left: -20px;
-        width: 1000px;
+        line-height: 30px;
     }
 
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
+    #about1_text .about_btn {
         position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 99%;
-    }
-    #view_4 {
-        width: 320px;
-        height: 510px;
-        margin-bottom: 60px;
-    }
-    #view_5 {
-        width: 320px;
-        height: 490px;
-        margin-bottom: 60px;
-    }
-    #view_6 {
-        width: 320px;
-        height: 510px;
-        margin-bottom: 60px;
+        top: -20px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
     }
 
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 2090px;
-        left: 80px;
-        font-size: 15px;
+    #about1_text .about_btn a {
+        font-size: 13px;
     }
 
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 550px;
+        height: 1550px;
     }
 
     #stats .content-box-md {
-        height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
@@ -4316,66 +2678,74 @@ footer p {
         font-size: 12px;
     }    
 
-    /*Contact us from continental location*/
-    #location {
-        height: 800px;
-    }
-    
-    .location_text h2 {
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2 {
         position: relative;
-        left: -10px;
         top: -100px;
+        height: 900px;
+        margin-bottom: -100px;
+    }
+
+    #about2_image .front {
+        position: relative;
+        top: 90px;
+        left: 5px;
+        z-index: 1;
+        width: 310px;
+    }
+
+    #about2_text h2 {
+        position: relative;
+        top: -260px;
+        left: 5px;
         font-size: 30px;
-        line-height: 40px;
-        width: 350px;
+        padding-bottom: 0;
     }
-    
-    .location_text p {
+
+    #about2_text p span {
         position: relative;
-        left: -5px;
-        top: -90px;
+        top: 40px;
+    }
+
+    #about2_text p {
+        position: relative;
+        top: 10px;
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 310px;
         font-size: 13px;
-        width: 330px;
-        line-height: 25px;
+        line-height: 30px;
     }
 
-    #location .location_image {
+    #about2_text .about_btn {
         position: relative;
-        width: 1100px;
-        top: -80px;
-        left: -300px;
+        top: 10px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
     }
 
-    .location_tag .location_2 {
-        position: relative;
-        top: 440px;
-        left: 100px;
-        z-index: 1;
-    }
-
-    .location_tag .location_3 {
-        position: relative;
-        top: 520px;
-        left: 120px;
-        z-index: 1;
+    #about2_text .about_btn a {
+        font-size: 13px;
     }
 
 
     /*Contact*/
     #contact {
-        height: 440px;
+        height: 470px;
     }
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -60px;
+        left: -15px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -40px;
         left: -5px;
     }
 
@@ -4417,447 +2787,329 @@ footer p {
 /* Extra small Device (Landscape phones and Portrait Tablets) */
 @media (max-width: 320px) {
 
-        /*Navigation bar*/
-        .navbar-brand {
-            padding: 10px 10px;
-        }
+    /*Navigation bar*/
+    .navbar-brand {
+        padding: 10px 10px;
+    }
 
-        .navbar-brand img {
-            position: relative;
-            top: -5px;
-            left: -15px;
-            width: 65px;
-            height: 40px;
-        }
+    .navbar-brand img {
+        position: relative;
+        top: -5px;
+        left: -15px;
+        width: 120px;
+    }
 
-        /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
-        .navbar-nav {
-            display: none;
-        }
+    /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
+    .navbar-nav {
+        display: none;
+    }
 
-        /*Mobile Menu button display*/
-        #mobile-nav-open-btn {
-            display: block;
-            left: 300px;
-            top: 5px;
-            font-size: 25px;
-            color: #7065f0
-        }
+    /*Mobile Menu button display*/
+    #mobile-nav-open-btn {
+        display: block;
+        left: 300px;
+        top: 5px;
+        font-size: 25px;
+        color: #000038
+    }
 
-        #mobile-nav-close-btn {
-            font-family: "Plus Jakarta Sans", "Open Sans";
-            font-size: 35px;
-            position: absolute;
-            top: -2px;
-            right: 13px;
-        }
+    #mobile-nav-close-btn {
+        font-family: "Plus Jakarta Sans", "Open Sans";
+        font-size: 35px;
+        position: absolute;
+        top: -2px;
+        right: 13px;
+    }
 
-        #mobile-nav a {
-            font-size: 13px;
-        }
+    #mobile-nav a {
+        font-size: 13px;
+    }
 
-        /*Navigation bar*/
-        .navbar {
-            padding: 5px 0;
-        }
+    /*Navigation bar*/
+    .navbar {
+        padding: 5px 0;
+    }
 
-        /*Below is the "Reach Us! section" at the navigation bar css*/
-        .get_touch_btn a {
-            top: 10px;
-            left: 10px;
-            text-decoration: none;
-        }  
+    /*Below is the "Reach Us! section" at the navigation bar css*/
+    .get_touch_btn a {
+        position: relative;
+        top: 20px;
+        left: 720px;
+        text-decoration: none;
+    }  
 
-        /*Home section*/
-        #home {
-            height: 100%;
-            width: 100%;
-            margin-bottom: 100px;
-        }
+    /*Home section*/
+    #home {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 300px;
+    }
 
-        #background_image img {
-            /* display: none; */
-            visibility: hidden;
-        }
+    #background_image img {
+        /* display: none; */
+        visibility: hidden;
+    }
 
-        #background_image{
-            background-image: url('../img/home_page/main_page_photo_small.jpg');
-            height: 100%;
-            width: 100%;
-        }
+    #background_image{
+        background-image: url('../img/home_page/main_page_photo_small.jpg');
+        height: 100%;
+        width: 100%;
+    }
 
-        .home-screen h1 {
-            position: relative;
-            top: 580px;
-            left: 175px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 350px;
-        }
+    .home-screen h1 {
+        position: relative;
+        top: 690px;
+        left: 175px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 350px;
+        font-weight: 900;
+    }
 
-        .home-screen p {
-            position: relative;
-            top: 500px;
-            left: 175px;
-            font-size: 13px;
-            line-height: 25px;
-            width: 330px;
-            text-align: justify;
-        }
+    .home-screen p {
+        position: relative;
+        top: 580px;
+        left: 175px;
+        font-size: 13px;
+        line-height: 25px;
+        width: 330px;
+        text-align: justify;
+    }
 
-        /* ======================================
-        |   |   |   Arrow down which displays only from this mobile view
-        ========================================= */
-        #arrow-down {
-            position: absolute;
-            left: 50%;
-            bottom: 3%;
-            color: #fff;
-            font-size: 30px;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            margin-left: -16px;
-            z-index: 1;
-            visibility: visible;
-        }
+    /* ======================================
+    |   |   |   Arrow down which displays only from this mobile view
+    ========================================= */
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        color: #fff;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-left: -16px;
+        z-index: 1;
+        visibility: visible;
+    }
 
-        #arrow-down:hover,
-        #arrow-down:focus {
-            color: #fff;
-        }
-        /*Arrow down ends here*/
+    #arrow-down:hover,
+    #arrow-down:focus {
+        color: #fff;
+    }
+    /*Arrow down ends here*/
 
-        /*About Estate company*/
-        #about {
-            height: 720px;
-        }
 
-        #about_image .front {
-            position: relative;
-            top: -260px;
-            left: 25px;
-            width: 270px;
-            height: 285px;
-            z-index: 1;
-        }
+    /*===================================
+    |  |  About Energy company
+    ====================================*/
+    #about1 {
+        position: relative;
+        top: -260px;
+        height: 900px;
+        margin-bottom: -800px;
+    }
 
-        #about_image .back {
-            position: relative;
-            top: 40px;
-            left: 10px;
-            width: 310px;
-            height: 314px;
-        }
+    #about1_image .front {
+        position: relative;
+        top: 110px;
+        left: 5px;
+        width: 310px;
+        z-index: 1;
+    }
 
-        #about_text {
-            position: relative;
-            top: -380px;
-            width: 330px;
-        }
+    #about1_text h2 {
+        position: relative;
+        top: -260px;
+        left: 5px;
+        font-size: 30px;
+        line-height: 40px;
+    }
 
-        #about_text h2 {
-            position: relative;
-            top: -290px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 350px;
-        }
+    #about1_text p span {
+        position: relative;
+        top: 40px;
+    }
 
-        #about_text p {
-            font-size: 13px;
-            padding-bottom: 0;
-            line-height: 23px;
-        }
+    #about1_text p {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 310px;
+        font-size: 13px;
+        line-height: 30px;
+    }
 
-        #about_text p span{
-            position: relative;
-            top: 20px;
-        }
+    #about1_text .about_btn {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
 
-        #about_text .about_btn a {
-            font-size: 11px;
-        }
+    #about1_text .about_btn a {
+        font-size: 13px;
+    }
+
+    /*Stats*/
+    #stats {
+        position: relative;
+        top: 550px;
+        height: 1490px;
+    }
+
+    #stats .first_stats {
+        height: 100px;
+        width: 260px;
+        top: -20px;
+        left: 40px;
+        padding: 20px;
+    }
+
+    #stats .second_stats {
+        height: 100px;
+        width: 260px;
+        left: 40px;
+        top: 80px;
+        padding: 20px;
+    }
+
+    #stats .third_stats {
+        height: 100px;
+        width: 260px;
+        left: 40px;
+        top: 180px;
+        padding: 20px;
+    }
+
+    #stats .vertical-heading h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    
+    #stats .vertical-heading p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .stats-item i {
+        font-size: 25px;
+    }
+    
+    .stats-item h3 {
+        font-size: 25px;
+    }
+    
+    .stats-item p {
+        font-size: 12px;
+    }    
+
+    /*======About section 2 which is MILESTONE below stats====*/
+    #about2 {
+        position: relative;
+        top: -100px;
+        height: 900px;
+        margin-bottom: -100px;
+    }
+
+    #about2_image .front {
+        position: relative;
+        top: 90px;
+        left: 5px;
+        z-index: 1;
+        width: 310px;
+    }
+
+    #about2_text h2 {
+        position: relative;
+        top: -260px;
+        left: 5px;
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    #about2_text p span {
+        position: relative;
+        top: 40px;
+    }
+
+    #about2_text p {
+        position: relative;
+        top: 10px;
+        left: 5px;
+        padding-bottom: 10px;
+        text-align: justify;
+        width: 310px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    #about2_text .about_btn {
+        position: relative;
+        top: 10px;
+        left: 5px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+
+    #about2_text .about_btn a {
+        font-size: 13px;
+    }
+
+
+
+    /*Contact*/
+    #contact {
+        height: 470px;
+    }
+
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -60px;
+        left: -15px;
+    }
+    
+    .office {
+        position: relative;
+        top: -40px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 13px;
+        line-height: 25px;
+        width: 320px;
+        text-align: justify;
+    }
         
-            /*Estate section*/
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
 
-        #estate {
-            height: 3750px;
-            margin-top: 100px;
-        }
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+    
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -200px;
+        font-size: 20px;
+        text-align: right;
+    }
 
-        #estate_header h2 {
-            position: relative;
-            top: -65px;
-            left: -5px;
-            width: 762px;
-            height: 67px;
-            font-size: 30px;
-            width: 300px;
-            line-height: 40px;
-        }
-
-        #estate_header p {
-            position: relative;
-            top: -40px;
-            left: -5px;
-            font-size: 13px;
-            line-height: 23px;
-            text-align: justify;
-            width: 330px;
-        }
-
-        #estate_view_1 {
-            position: relative;
-            left: -18px;
-            top: -20px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 1*/
-        #view_1 .image_btn_one a,
-        #view_2 .image_btn_two a,
-        #view_3 .image_btn_three a {
-            position: relative;
-            top: -245px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 1 ends here*/
-
-        #estate_view_1 img {
-            height: 260px;
-            width: 99%;
-        }
-
-        #view_1 {
-            width: 320px;
-            height: 490px;
-            margin-bottom: 60px;
-        }
-        #view_2 {
-            width: 320px;
-            height: 520px;
-            margin-bottom: 60px;
-        }
-        #view_3 {
-            width: 320px;
-            height: 520px;
-            margin-bottom: 60px;
-        }
-        /*====================================
-        |  |  CSS that affect all section
-        =====================================*/
-        /*housing text for all estate*/
-        .housing_text_below h2 {
-            font-size: 16px;
-        }
-        .housing_text_below p {
-            font-size: 13px;
-        }
-        /*button for all section*/
-        .view_btn a {
-            position: relative;
-            top: 12px;
-            left: 20px;
-            padding: 8px 80px;
-        }
-        /*======ends here================*/
-
-        #estate_view_2 {
-            position: relative;
-            top: 1050px;
-            left: -20px;
-            width: 1000px;
-        }
-
-        /*Sold/Available button posiition for estate view 2*/
-        #view_4 .image_btn_four a,
-        #view_5 .image_btn_five a,
-        #view_6 .image_btn_six a {
-            position: relative;
-            top: -245px;
-            left: 10px;
-        }
-        /*Sold/Available for estate view 2 ends here*/
-
-        #estate_view_2 img {
-            height: 260px;
-            width: 99%;
-        }
-        #view_4 {
-            width: 320px;
-            height: 510px;
-            margin-bottom: 60px;
-        }
-        #view_5 {
-            width: 320px;
-            height: 490px;
-            margin-bottom: 60px;
-        }
-        #view_6 {
-            width: 320px;
-            height: 510px;
-            margin-bottom: 60px;
-        }
-
-        /*Estate down button*/
-        .estate_header_btn a {
-            position: relative;
-            top: 2080px;
-            left: 80px;
-            font-size: 15px;
-        }
-
-        /*Stats*/
-        #stats {
-            height: 850px;
-        }
-
-        #stats .content-box-md {
-            height: 850px;
-        }
-
-        #stats .first_stats {
-            height: 100px;
-            width: 260px;
-            top: -20px;
-            left: 40px;
-            padding: 20px;
-        }
-
-        #stats .second_stats {
-            height: 100px;
-            width: 260px;
-            left: 40px;
-            top: 80px;
-            padding: 20px;
-        }
-
-        #stats .third_stats {
-            height: 100px;
-            width: 260px;
-            left: 40px;
-            top: 180px;
-            padding: 20px;
-        }
-
-        #stats .vertical-heading h2 {
-            font-size: 30px;
-            line-height: 40px;
-            padding-bottom: 10px;
-        }
-        
-        #stats .vertical-heading p {
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        .stats-item i {
-            font-size: 25px;
-        }
-        
-        .stats-item h3 {
-            font-size: 25px;
-        }
-        
-        .stats-item p {
-            font-size: 12px;
-        }    
-
-        /*Contact us from continental location*/
-        #location {
-            height: 800px;
-        }
-        
-        .location_text h2 {
-            position: relative;
-            left: -10px;
-            top: -100px;
-            font-size: 30px;
-            line-height: 40px;
-            width: 350px;
-        }
-        
-        .location_text p {
-            position: relative;
-            left: -5px;
-            top: -90px;
-            font-size: 13px;
-            width: 330px;
-            line-height: 25px;
-        }
-
-        #location .location_image {
-            position: relative;
-            width: 1100px;
-            top: -80px;
-            left: -300px;
-        }
-
-        .location_tag .location_2 {
-            position: relative;
-            top: 440px;
-            left: 100px;
-            z-index: 1;
-        }
-
-        .location_tag .location_3 {
-            position: relative;
-            top: 520px;
-            left: 120px;
-            z-index: 1;
-        }
-
-
-        /*Contact*/
-        #contact {
-            height: 440px;
-        }
-
-        .contact_logo {
-            position: relative;
-            width: 120px;
-            top: -40px;
-            left: 10px;
-        }
-        
-        .office {
-            position: relative;
-            top: 10px;
-            left: -5px;
-        }
-
-        .office-details {
-            font-size: 13px;
-            line-height: 25px;
-            width: 350px;
-            text-align: justify;
-        }
-        
-        /*Footer*/
-        footer {
-            padding: 5px;
-        }
-
-        footer p {
-            position: relative;
-            top: 15px;
-            left: -10px;
-            font-size: 12px;
-            width: 350px;
-        }
-        
-        .footer_icons {
-            position: relative;
-            top: -60px;
-            left:  -200px;
-            font-size: 20px;
-            text-align: right;
-        }
-
-        .btn-back-to-top {
-            font-size: 18px;
-            z-index: 1;
-        }
-
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
 }
