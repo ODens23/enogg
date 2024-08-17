@@ -7,7 +7,7 @@
 
 #mobile-nav-open-btn {
     font-size: 50px;
-    color: #7065f0;
+    color: #000038;
     cursor: pointer;
     z-index: 2;
     position: absolute;
@@ -34,7 +34,7 @@
 #mobile-nav-close-btn {
     font-family: "Plus Jakarta Sans", "Open Sans";
     font-size: 50px;
-    color: #212226;
+    color: #000038;
     font-weight: 400;
     cursor: pointer;
     position: absolute;
@@ -67,7 +67,7 @@
 #mobile-nav a:focus,
 #mobile-nav-close-btn:hover,
 #mobile-nav-close-btn:focus {
-    color: #7065f0;
+    color: #000038;
 }
 
 
@@ -1000,17 +1000,17 @@
 
     #about2_image .front {
         position: relative;
-        top: 5px;
-        left: -10px;
+        top: 30px;
+        left: -50px;
+        width: 420px;
         z-index: 1;
-        width: 500px;
     }
 
     #about2_text h2 {
         position: relative;
-        top: -40px;
-        left: 20px;
-        font-size: 40px;
+        top: -310px;
+        left: 380px;
+        font-size: 30px;
         padding-bottom: 0;
     }
 
@@ -1021,18 +1021,19 @@
 
     #about2_text p {
         position: relative;
-        top: -80px;
-        left: 20px;
+        top: -360px;
+        left: 380px;
         padding-bottom: 10px;
         text-align: justify;
-        width: 450px;
+        width: 380px;
+        font-size: 14px;
         line-height: 28px;
     }
 
     #about2_text .about_btn {
         position: relative;
-        top: -90px;
-        left: 20px;
+        top: -370px;
+        left: 380px;
         margin-top: 30px;
         text-decoration: none;
     }
@@ -1041,13 +1042,13 @@
     
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -45px;
         left: -60px;
     }
 
     .office {
-        top: 10px;
+        top: -20px;
         left: -60px;
     }
 
@@ -1362,7 +1363,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
         left: 650px;
         top: 5px;
         font-size: 30px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -1672,7 +1673,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
         left: 580px;
         top: 5px;
         font-size: 30px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -1766,7 +1767,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
         left: 530px;
         top: 5px;
         font-size: 30px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -1936,7 +1937,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen h1 {
         position: relative;
-        top: 690px;
+        top: 580px;
         left: 175px;
         font-size: 30px;
         line-height: 50px;
@@ -1946,7 +1947,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen p {
         position: relative;
-        top: 580px;
+        top: 520px;
         left: 175px;
         font-size: 14px;
         line-height: 25px;
@@ -2203,7 +2204,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
         left: 360px;
         top: 5px;
         font-size: 25px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -2321,7 +2322,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
     left: 320px;
     top: 10px;
     font-size: 25px;
-    color: #7065f0
+    color: #000038
 }
 
 #mobile-nav-close-btn {
@@ -2342,8 +2343,6 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 }
 
 .home-screen p {
-    position: relative;
-    top: 630px;
     width: 330px;
 }
 
@@ -2525,7 +2524,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen h1 {
         position: relative;
-        top: 690px;
+        top: 580px;
         left: 175px;
         font-size: 30px;
         line-height: 40px;
@@ -2535,7 +2534,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen p {
         position: relative;
-        top: 580px;
+        top: 520px;
         left: 175px;
         font-size: 13px;
         line-height: 25px;
@@ -2730,7 +2729,6 @@ other intermediate screen after this for medium (tab and co) screen holds only e
         font-size: 13px;
     }
 
-
     /*Contact*/
     #contact {
         height: 470px;
@@ -2858,7 +2856,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen h1 {
         position: relative;
-        top: 690px;
+        top: 580px;
         left: 175px;
         font-size: 30px;
         line-height: 40px;
@@ -2868,7 +2866,7 @@ other intermediate screen after this for medium (tab and co) screen holds only e
 
     .home-screen p {
         position: relative;
-        top: 580px;
+        top: 520px;
         left: 175px;
         font-size: 13px;
         line-height: 25px;
