@@ -90,7 +90,7 @@ section {
 ========================================= */
 #intouch {
     height: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 #intouch_homepage h1 {
@@ -127,6 +127,8 @@ color: #000038;
 }
 
 .get_touch_btn {
+    position: relative;
+    left: -570px;
     margin-top: 40px;
 }
 

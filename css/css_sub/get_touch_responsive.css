@@ -7,7 +7,7 @@
 
 #mobile-nav-open-btn {
     font-size: 50px;
-    color: #7065f0;
+    color: #000038;
     cursor: pointer;
     z-index: 2;
     position: absolute;
@@ -34,7 +34,7 @@
 #mobile-nav-close-btn {
     font-family: "Plus Jakarta Sans", "Open Sans";
     font-size: 50px;
-    color: #212226;
+    color: #000038;
     font-weight: 400;
     cursor: pointer;
     position: absolute;
@@ -67,7 +67,7 @@
 #mobile-nav a:focus,
 #mobile-nav-close-btn:hover,
 #mobile-nav-close-btn:focus {
-    color: #7065f0;
+    color: #000038;
 }
 
 
@@ -79,6 +79,8 @@
 /*Extra large screen down to 4k*/
 @media (min-width: 2561px) {
     #intouch_homepage h1 {
+        position: relative;
+        left: -380px;
         margin-top: 80px;
         font-size: 200px;
         width:max-content;
@@ -109,13 +111,6 @@
     }
     /*Arrow down ends here*/
 
-    /*Below is the "Reach Us! section" at the navigation bar css*/
-    .get_touch_btn a {
-        position: relative;
-        top: -3px;
-        left: 10px;
-        text-decoration: none;
-    } 
 }
 
 /* Between screens ----------- */
@@ -123,7 +118,7 @@
     /*Home section*/
     .nav {
         position: relative;
-        left: -75px;
+        left: -5px;
     }
 
     /* ======================================
@@ -137,13 +132,13 @@
     /*Contact*/    
     .contact_logo {
         position: relative;
-        width: 160px;
-        top: -20px;
+        width: 190px;
+        top: -30px;
         left: -20px;
     }
 
     .office {
-        top: -5px;
+        top: -25px;
         left: -10px;
     }
 
@@ -177,7 +172,7 @@
     /*Home section*/
     .nav {
         position: relative;
-        left: -25px;
+        left: 50px;
     }
 
     .intouch_down_text {
@@ -198,13 +193,13 @@
     /*Contact*/    
     .contact_logo {
         position: relative;
-        width: 160px;
-        top: -20px;
+        width: 190px;
+        top: -30px;
         left: -80px;
     }
 
     .office {
-        top: -5px;
+        top: -30px;
         left: -70px;
     }
 
@@ -242,7 +237,7 @@
     /*Home section*/
     .nav {
         position: relative;
-        left: -60px;
+        left: 30px;
     }
 
     .intouch_down_text {
@@ -273,13 +268,13 @@
     
     .contact_logo {
         position: relative;
-        width: 160px;
-        top: -20px;
+        width: 190px;
+        top: -30px;
         left: -30px;
     }
 
     .office {
-        top: -5px;
+        top: -30px;
         left: -30px;
     }
 
@@ -317,7 +312,7 @@
     /*Home section*/
     .nav {
         position: relative;
-        left: -90px;
+        left: 10px;
         padding: -10px 0;
     }
 
@@ -326,8 +321,7 @@
     }
     
     .navbar-brand img {
-        width: 100px;
-        top: -5px;
+        top: -10px;
     }
 
     .intouch_down_text {
@@ -357,13 +351,13 @@
     /*Contact*/
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -30px;
         left: -20px;
     }
 
     .office {
-        top: 10px;
+        top: -20px;
         left: -10px;
     }
 
@@ -403,7 +397,7 @@
     /*Home section*/
     .nav {
         position: relative;
-        left: 10px;
+        left: 50px;
     }
 
     ul.navbar-nav > li > a {
@@ -411,7 +405,6 @@
     }
 
     .navbar-brand img {
-        width: 100px;
         top: -10px;
     }
 
@@ -505,13 +498,13 @@
     /*Contact*/
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -30px;
         left: -40px;
     }
 
     .office {
-        top: 10px;
+        top: -20px;
         left: -40px;
     }
 
@@ -560,7 +553,6 @@
     }
 
     .navbar-brand img {
-        width: 100px;
         top: -10px;
     }
 
@@ -701,12 +693,9 @@
         padding: 10px 10px;
     }
 
+        
     .navbar-brand img {
-        position: relative;
-        top: -13px;
-        left: -15px;
-        width: 100px;
-        height: 60px;
+        width: 170px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -848,13 +837,13 @@
     
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -30px;
         left: -5px;
     }
 
     .office {
-        top: 10px;
+        top:-40px;
         left: 5px;
     }
 
@@ -899,11 +888,7 @@
 }
 
 .navbar-brand img {
-    position: relative;
-    top: -13px;
-    left: -15px;
-    width: 100px;
-    height: 60px;
+    width: 170px;
 }
 
 /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1045,13 +1030,13 @@
 
 .contact_logo {
     position: relative;
-    width: 150px;
-    top: -10px;
+    width: 190px;
+    top: -40px;
     left: 5px;
 }
 
 .office {
-    top: 10px;
+    top: -40px;
     left: 5px;
 }
 
@@ -1096,11 +1081,7 @@ footer p {
 }
 
 .navbar-brand img {
-    position: relative;
-    top: -13px;
-    left: -15px;
-    width: 100px;
-    height: 60px;
+    width: 170px;
 }
 
 /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1241,13 +1222,13 @@ footer p {
 
 .contact_logo {
     position: relative;
-    width: 150px;
-    top: -10px;
+    width: 190px;
+    top: -40px;
     left: -10px;
 }
 
 .office {
-    top: 10px;
+    top: -20px;
     left: -3px;
 }
 
@@ -1299,11 +1280,7 @@ footer p {
     }
 
     .navbar-brand img {
-        position: relative;
-        top: -5px;
-        left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1450,19 +1427,19 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -50px;
+        left: -5px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -40px;
         left: -5px;
     }
 
     .office-details {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 25px;
         width: 350px;
         text-align: justify;
@@ -1505,11 +1482,7 @@ footer p {
     }
 
     .navbar-brand img {
-        position: relative;
-        top: -5px;
-        left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1660,21 +1633,21 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -50px;
+        left: -5px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -40px;
         left: -5px;
     }
 
     .office-details {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 25px;
-        width: 350px;
+        width: 390px;
         text-align: justify;
     }
     
@@ -1715,11 +1688,7 @@ footer p {
     }
 
     .navbar-brand img {
-    position: relative;
-    top: -5px;
-    left: -15px;
-    width: 65px;
-    height: 40px;
+    width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -1876,23 +1845,22 @@ footer p {
     }
 
     .contact_logo {
-    position: relative;
-    width: 120px;
-    top: -40px;
-    left: 10px;
+        position: relative;
+        width: 190px;
+        top: -90px;
+        left: -10px;
     }
 
     .office {
-    position: relative;
-    top: 10px;
-    left: -5px;
+        position: relative;
+        top: -70px;
+        left: -5px;
     }
 
     .office-details {
-    font-size: 13px;
-    line-height: 25px;
-    width: 330px;
-    text-align: justify;
+        line-height: 25px;
+        width: 330px;
+        text-align: justify;
     }
 
     /*Footer*/
@@ -1932,11 +1900,7 @@ footer p {
 }
 
 .navbar-brand img {
-    position: relative;
-    top: -5px;
-    left: -15px;
-    width: 65px;
-    height: 40px;
+    width: 120px;
 }
 
 /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -2094,14 +2058,14 @@ footer p {
 
 .contact_logo {
     position: relative;
-    width: 120px;
-    top: -40px;
-    left: 10px;
+    width: 190px;
+    top: -70px;
+    left: -15px;
 }
 
 .office {
     position: relative;
-    top: 10px;
+    top: -70px;
     left: -5px;
 }
 
@@ -2111,6 +2075,7 @@ footer p {
     width: 320px;
     text-align: justify;
 }
+
 
 /*Footer*/
 footer {
@@ -2147,11 +2112,7 @@ footer p {
         padding: 10px 10px;
     }
     .navbar-brand img {
-        position: relative;
-        top: -5px;
-        left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -2309,21 +2270,21 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -90px;
+        left: -15px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -80px;
         left: -5px;
     }
 
     .office-details {
         font-size: 13px;
         line-height: 25px;
-        width: 350px;
+        width: 320px;
         text-align: justify;
     }
     
