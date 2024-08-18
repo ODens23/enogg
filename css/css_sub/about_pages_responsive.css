@@ -7,7 +7,7 @@
 
 #mobile-nav-open-btn {
     font-size: 50px;
-    color: #7065f0;
+    color: #000038;
     cursor: pointer;
     z-index: 2;
     position: absolute;
@@ -34,7 +34,7 @@
 #mobile-nav-close-btn {
     font-family: "Plus Jakarta Sans", "Open Sans";
     font-size: 50px;
-    color: #212226;
+    color: #000038;
     font-weight: 400;
     cursor: pointer;
     position: absolute;
@@ -57,7 +57,7 @@
 #mobile-nav a {
     font-family: "Plus Jakarta Sans", "Open Sans";
     font-size: 16px;
-    color: #3D7A5B;
+    color: #41B00A;
     font-weight: 400;
     text-transform: uppercase;
     display:inline;
@@ -68,7 +68,7 @@
 #mobile-nav a:focus,
 #mobile-nav-close-btn:hover,
 #mobile-nav-close-btn:focus {
-    color: #7065f0;
+    color: #000038;
 }
 
 
@@ -77,11 +77,6 @@
 ============================================*/
 /*Extra large screen down to 4k*/
 @media (min-width: 2561px) {
-    /*background image*/
-    #background_image img {
-        width: 100%;
-    }
-
     /* ======================================
     |  Arrow down which displays only from this mobile view
     ========================================= */
@@ -97,28 +92,11 @@
         left: 10px;
         text-decoration: none;
     } 
-
-    /*About company team*/
-    #about_team {
-        padding-top: 150px;
-    }
-
-    #about_team_image .front {
-        position: relative;
-        top: -640px;
-    }
-
-    #about_team_image .back {
-        visibility: hidden;
-    }
 }
 
 /*Large screens*/
 @media (max-width: 2560px) {
     /*background image*/
-    #background_image img {
-        width: 100%;
-    }
 
     /* ======================================
     |  Arrow down which displays only from this mobile view
@@ -136,60 +114,6 @@
         text-decoration: none;
     } 
 
-    /*About company team*/
-    #about_team {
-        padding-top: 150px;
-    }
-
-    #about_team_image .front {
-        position: relative;
-        top: -640px;
-    }
-
-    #about_team_image .back {
-        visibility: hidden;
-    }
-}
-
-/*Large screens*/
-@media (max-width: 2300px) {
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 50px;
-    left: 1100px;
-}
-}
-
-/*Large screens*/
-@media (max-width: 2000px) {
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 50px;
-    left: 900px;
-}
-}
-
-/*Large screens*/
-@media (max-width: 1600px) {
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 50px;
-    left: 700px;
-}
-}
-
-/*Large screens*/
-@media (max-width: 1500px) {
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 600px;
-    }
 }
 
 /* Between Large Laptops and Laptops screens ----------- */
@@ -204,18 +128,6 @@
         height: 600px;
     }
 
-    .home-screen h1 {
-        position: relative;
-        left: 160px;
-        width: 800px;
-        font-size: 50px;
-    }
-    .home-screen p {
-        position: relative;
-        left: 160px;
-        width: 800px;
-    }
-
     /* ======================================
     |  Arrow down which displays only from this mobile view
     ========================================= */
@@ -223,118 +135,6 @@
         visibility: hidden;
     }
     /*Arrow down ends here*/
-
-    /*Estate section*/
-    #estate_header h2 {
-        position: relative;
-        top: -30px;
-    }
-    #estate_header p {
-        position: relative;
-        top: -30px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        width: 1290px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 25px;
-    }
-    .housing_text_below p {
-        font-size: 16px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -20px;
-        width: 1290px;
-        
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 99%;
-    }
-    #view_4 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        width: 100%;
-        height: 520px;
-    }
-
-        /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 550px;
-    }
 }
 
 /* Between screens ----------- */
@@ -345,28 +145,6 @@
         left: -75px;
     }
 
-    #home .row {
-        position: relative;
-        top: 60px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 50px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        left: 200px;
-        font-size: 45px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -50px;
-        left: 200px;
-    }
-
     /* ======================================
     |  Arrow down which displays only from this mobile view
     ========================================= */
@@ -375,130 +153,17 @@
     }
     /*Arrow down ends here*/
 
-    /*Estate section*/
-    #estate_header h2 {
-        position: relative;
-        top: -30px;
-    }
-    #estate_header p {
-        position: relative;
-        top: -30px;
-    }
-    
-        #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -30px;
-        width: 1200px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 25px;
-    }
-    .housing_text_below p {
-        font-size: 16px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -40px;
-        left: -30px;
-        width: 1200px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 500px;
-    }
-
     /*Contact*/
     
     .contact_logo {
         position: relative;
-        width: 160px;
-        top: -20px;
+        width: 190px;
+        top: -15px;
         left: -20px;
     }
 
     .office {
-        top: -5px;
+        top: -15px;
         left: -20px;
     }
 
@@ -535,28 +200,6 @@
         left: -25px;
     }
 
-    #home .row {
-        position: relative;
-        top: 60px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 110px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        left: 120px;
-        font-size: 45px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -50px;
-        left: 120px;
-    }
-
     /* ======================================
     |  Arrow down which displays only from this mobile view
     ========================================= */
@@ -565,13 +208,23 @@
     }
     /*Arrow down ends here*/
 
-    /*About Team*/
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 20px;
+    }
+
+    /*===================================
+    |  |  About text section and CEO
+    ====================================*/
     #about_team {
-        margin-top: -300px;
+        height: 2650px;
     }
 
     #about_team_text {
         position: relative;
+        top: -10px;
         left: -50px;
         width: 1050px;
     }
@@ -637,128 +290,16 @@
         padding-right: 8px;
     }
 
-
-    /*Estate section*/
-    #estate_header h2 {
-        left: -60px;
-    }
-    #estate_header p {
-        position: relative;
-        top: -30px;
-        left: -60px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        width: 1100px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 24px;
-    }
-    .housing_text_below p {
-        font-size: 15px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -40px;
-        width: 1100px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 480px;
-    }
-
     /*Contact*/    
     .contact_logo {
         position: relative;
-        width: 160px;
+        width: 190px;
         top: -20px;
         left: -80px;
     }
 
     .office {
-        top: -5px;
+        top: -20px;
         left: -70px;
     }
 
@@ -798,30 +339,6 @@
         position: relative;
         left: -60px;
     }
-
-    #home .row {
-        position: relative;
-        top: 60px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 110px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        top: 10px;
-        left: 150px;
-        font-size: 40px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -30px;
-        left: 150px;
-    }
-
     /* ======================================
     |  Arrow down which displays only from this mobile view
     ========================================= */
@@ -830,13 +347,21 @@
     }
     /*Arrow down ends here*/
 
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 20px;
+    }
+
     /*About Team*/
     #about_team {
-        margin-top: -400px;
+        height: 2650px;
     }
 
     #about_team_text {
         position: relative;
+        top: -10px;
         left: -30px;
         width: 1000px;
     }
@@ -911,132 +436,17 @@
         padding-right: 8px;
     }
 
-    /*Estate section*/
-    #estate_header h2 {
-        left: -40px;
-        font-size: 41px;
-    }
-    #estate_header p {
-        position: relative;
-        top: -30px;
-        left: -40px;
-        font-size: 15px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -50px;
-        width: 1024px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 24px;
-    }
-    .housing_text_below p {
-        font-size: 15px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -40px;
-        left: -50px;
-        width: 1024px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 440px;
-    }
-
     /*Contact*/
     
     .contact_logo {
         position: relative;
-        width: 160px;
+        width: 190px;
         top: -20px;
         left: -30px;
     }
 
     .office {
-        top: -5px;
+        top: -25px;
         left: -30px;
     }
 
@@ -1087,32 +497,8 @@
     }   
     
     .navbar-brand img {
-        width: 100px;
+        width: 190px;
         top: -5px;
-    }
-
-    #home .row {
-        position: relative;
-        top: 60px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 110px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        top: 10px;
-        left: 180px;
-        font-size: 35px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -30px;
-        left: 180px;
-        font-size: 15px;
     }
 
     /* ======================================
@@ -1123,13 +509,21 @@
     }
     /*Arrow down ends here*/
 
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 20px;
+    }
+
     /*About Team*/
     #about_team {
-        margin-top: -400px;
+        height: 2650px;
     }
 
     #about_team_text {
         position: relative;
+        top: -10px;
         left: -10px;
         width: 960px;
     }
@@ -1204,127 +598,9 @@
         padding-right: 8px;
     }
 
-
-    /*Estate section*/
-    #estate_header h2 {
-        left: -5px;
-        font-size: 35px;
-    }
-    #estate_header p {
-        position: relative;
-        top: -30px;
-        left: -5px;
-        font-size: 15px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -30px;
-        width: 992px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 20px;
-    }
-    .housing_text_below p {
-        font-size: 15px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -50px;
-        left: -30px;
-        width: 992px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 50px;
-        left: 420px;
-    }
-
     /*Stats*/
     #stats .vertical-heading h2 {
         font-size: 35px;
-        /* line-height: 40px;
-        padding-bottom: 10px; */
     }
     
     #stats .vertical-heading p {
@@ -1347,13 +623,13 @@
     /*Contact*/
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -20px;
         left: -20px;
     }
 
     .office {
-        top: 10px;
+        top: -15px;
         left: -10px;
     }
 
@@ -1406,32 +682,8 @@
     }   
     
     .navbar-brand img {
-        width: 100px;
+        width: 190px;
         top: -5px;
-    }
-
-    #home .row {
-        position: relative;
-        top: 60px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 110px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        top: -30px;
-        left: 130px;
-        font-size: 35px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -60px;
-        left: 130px;
-        font-size: 14px;
     }
 
     /* ======================================
@@ -1442,20 +694,21 @@
     }
     /*Arrow down ends here*/
 
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 20px;
+    }
+
     /*About Team*/
     #about_team {
         height: 3000px;
-        margin-top: -600px;
-    }
-    
-    #about_team_image .front {
-        position: relative;
-        top: -1920px;
-        left: 250px;
     }
 
     #about_team_text {
         position: relative;
+        top: -15px;
         left: -40px;
         width: 800px;
     }
@@ -1472,7 +725,7 @@
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -800px;
+        top: 100px;
         padding-top: 0px;
     }
 
@@ -1532,7 +785,7 @@
         padding-right: 8px;
     }
 
-    /*below is the css setup for two pictures in a row to accommodate smaller screens*/
+    /*below is the css positioning setup for two pictures in a row to accommodate smaller screens*/
     #team_2 {
         position: relative;
         top: -420px;
@@ -1561,171 +814,36 @@
         left: 400px;
     }
 
-
-    /*Estate section*/
-    #estate {
-        height: 1500px;
-        margin-top: -100px;
-    }
-
-    #estate_header h2 {
-        left: -50px;
-        font-size: 30px;
-    }
-    #estate_header p {
+    #team_7 {
         position: relative;
-        top: -50px;
-        left: -50px;
-        font-size: 14px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -70px;
-        width: 400px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        position: relative;
-        top: -580px;
-        left: 450px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        position: relative;
-        top: -580px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 20px;
-    }
-    .housing_text_below p {
-        font-size: 14px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -80px;
-        left: -70px;
-        width: 400px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        position: relative;
-        left: 450px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        position: relative;
-        top: 60px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        position: relative;
-        top: -460px;
-        left: 450px;
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 530px;
-        left: 360px;
+        top: -1240px;
     }
 
     /*Stats*/
-    #stats {
-        height: 510px;
-    }
-    
-    #stats .content-box-md {
-        height: 510px;
-    }
-
     #stats .first_stats {
         height: 100px;
-        width: 280px;
+        width: 270px;
         left: -40px;
     }
 
     #stats .second_stats {
         height: 100px;
-        width: 280px;
-        left: -30px;
+        width: 270px;
+        left: -25px;
     }
 
     #stats .third_stats {
         height: 100px;
-        width: 260px;
-        left: 540px;
+        width: 270px;
+        left: 530px;
         top: -100px;
     }
 
     #stats .vertical-heading h2 {
         font-size: 30px;
-    }
 
+    }
+    
     #stats .vertical-heading p {
         font-size: 14px;
     }
@@ -1733,11 +851,11 @@
     .stats-item i {
         font-size: 35px;
     }
-
+    
     .stats-item h3 {
         font-size: 30px;
     }
-
+    
     .stats-item p {
         font-size: 14px;
     }    
@@ -1745,13 +863,13 @@
     /*Contact*/
     .contact_logo {
         position: relative;
-        width: 150px;
+        width: 190px;
         top: -10px;
         left: -40px;
     }
 
     .office {
-        top: 10px;
+        top: -10px;
         left: -40px;
     }
 
@@ -1805,33 +923,8 @@
     }   
     
     .navbar-brand img {
-        width: 100px;
+        width: 190px;
         top: -5px;
-    }
-
-    #home .row {
-        position: relative;
-        top: 60px;
-        width: 850px;
-    }
-
-    .home-screen {
-        position: relative;
-        top: 110px;
-        height: 1000px;
-        padding-top: 50px;
-    }
-
-    .home-screen h1 {
-        top: -70px;
-        left: 180px;
-        font-size: 35px;
-    }
-    .home-screen p {
-        position: relative;
-        top: -100px;
-        left: 180px;
-        font-size: 14px;
     }
 
     /* ======================================
@@ -1842,22 +935,25 @@
     }
     /*Arrow down ends here*/
 
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+    }
+
+    .about-item p {
+        font-size: 14px;
+    }
+
     /*About Team*/
     #about_team {
         height: 3100px;
-        margin-top: -700px;
-    }
-
-    #about_team_image .front {
-        position: relative;
-        top: -2050px;
-        left: 300px;
-        width: 380px;
     }
 
     #about_team_text {
         position: relative;
-        top: -90px;
+        top: -15px;
         left: -5px;
         width: 730px;
     }
@@ -1876,7 +972,7 @@
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -800px;
+        top: 100px;
         padding-top: 0px;
     }
 
@@ -1965,149 +1061,12 @@
         left: 400px;
     }
 
-    /*Estate section*/
-    #estate {
-        height: 1450px;
-        margin-top: -100px;
-    }
-
-    #estate_header h2 {
-        left: -10px;
-        font-size: 30px;
-    }
-    #estate_header p {
+    #team_7 {
         position: relative;
-        top: -50px;
-        left: -10px;
-        font-size: 14px;
-    }
-    
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -30px;
-        width: 390px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        position: relative;
-        top: -580px;
-        left: 390px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        position: relative;
-        top: -580px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 20px;
-    }
-    .housing_text_below p {
-        font-size: 14px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-        font-size: 9px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -80px;
-        left: -80px;
-        width: 390px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 100%;
-    }
-    #view_4 {
-        position: relative;
-        left: 450px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        position: relative;
-        top: 60px;
-        left: 50px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        position: relative;
-        top: -460px;
-        left: 450px;
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 490px;
-        left: 330px;
+        top: -1240px;
     }
 
     /*Stats*/
-    #stats {
-        height: 510px;
-    }
-    
-    #stats .content-box-md {
-        height: 510px;
-    }
-
     #stats .first_stats {
         height: 100px;
         width: 270px;
@@ -2129,7 +1088,6 @@
 
     #stats .vertical-heading h2 {
         font-size: 30px;
-
     }
     
     #stats .vertical-heading p {
@@ -2146,18 +1104,19 @@
     
     .stats-item p {
         font-size: 14px;
-    }   
+    }    
+
 
     /*Contact*/
     .contact_logo {
         position: relative;
-        width: 150px;
+        width: 190px;
         top: -10px;
         left: -10px;
     }
 
     .office {
-        top: 10px;
+        top: -15px;
         left: -10px;
     }
 
@@ -2201,8 +1160,7 @@
         position: relative;
         top: -13px;
         left: -15px;
-        width: 100px;
-        height: 60px;
+        width: 190px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -2216,7 +1174,7 @@
         left: 650px;
         top: 5px;
         font-size: 30px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -2238,52 +1196,11 @@
     
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        top: 10px;
-        left: -450px;
+        top: 20px;
+        left: -360px;
         text-decoration: none;
     }  
     
-    /*Home section*/
-    #home {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 200px;
-    }
-
-    #background_image img {
-        visibility: hidden;
-    }
-
-    /*767- 563 is tablet screen size hence, I am using a medium picture of the home screen*/
-    #background_image{
-        background-image: url('/img/about_page_images/about_home_image_medium.jpg');
-        height: 100%;
-        width: 100%;
-    }
-
-    #home .row {
-        width: 1100px;
-    }
-
-    .home-screen {
-        height: 1100px;
-    }
-
-    .home-screen h1 {
-        position: relative;
-        top: 90px;
-        left: 190px;
-        font-size: 40px;
-        width: 700px;
-    }
-    .home-screen p {
-        position: relative;
-        top: 80px;
-        left: 190px;
-        font-size: 15px;
-    }
-
-
     /* ======================================
     |   |   |   Arrow down which displays only from this mobile view
     ========================================= */
@@ -2291,7 +1208,7 @@
         position: absolute;
         left: 50%;
         bottom: 3%;
-        color: #fff;
+        color: #000;
         font-size: 40px;
         width: 32px;
         height: 32px;
@@ -2303,26 +1220,30 @@
 
     #arrow-down:hover,
     #arrow-down:focus {
-        color: #fff;
+        color: #000;
     }
     /*Arrow down ends here*/
 
-    /*About Team*/
-    #about_team {
-        height: 3100px;
-        margin-top: -200px;
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -2120px;
-        left: 305px;
-        width: 370px;
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 3090px;
     }
 
     #about_team_text {
         position: relative;
-        top: -90px;
+        top: -15px;
         left: 5px;
         width: 660px;
     }
@@ -2337,11 +1258,10 @@
         line-height: 35px;
     }
 
-
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -800px;
+        top: 100px;
         padding-top: 0px;
     }
 
@@ -2384,7 +1304,7 @@
         top: 25px;
         left: 10px;
         font-size: 13px;
-        color: #7065f0;
+        color: #000038;
         font-weight: 500;
     }
 
@@ -2429,156 +1349,18 @@
         top: -1260px;
         left: 350px;
     }
-    
-    /*Estate section*/
 
-    #estate {
-        height: 1500px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
+    #team_7 {
         position: relative;
-        top: -60px;
-        left: 5px;
-        width: 670px;
-        height: 67px;
-        font-size: 40px;
-        width: 550px;
-        line-height: 50px;
-    }
-
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: 5px;
-        font-size: 15px;
-        line-height: 23px;
-        text-align: justify;
-        width: 660px;
-        padding: 20px 0;
-    }
-
-    #estate_view_1 {
-        position: relative;
-        top: -20px;
-        left: -20px;
-        width: 350px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        position: relative;
-        top: -580px;
-        left: 360px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        position: relative;
-        top: -580px;
-        width: 100%;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 20px;
-    }
-    .housing_text_below p {
-        font-size: 14px;
-    }
-    /*View button effect for all section and some for estate 1 section because of movement levels*/
-    .view_btn a {
-        position: relative;
-        top: 5px;
-        left: -5px;
-        padding: 8px 60px;
-        font-size: 9px;
-    }
-
-    /*View button for estate 2 section because of movement levels*/
-    #estate_view_2 .view_btn a {
-        position: relative;
-        top: 60px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        position: relative;
-        top: -80px;
-        left: -80px;
-        width: 370px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 99%;
-    }
-    #view_4 {
-        position: relative;
-        left: 420px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_5 {
-        position: relative;
-        top: 60px;
-        left: 60px;
-        width: 100%;
-        height: 520px;
-    }
-    #view_6 {
-        position: relative;
-        top: -460px;
-        left: 420px;
-        width: 100%;
-        height: 520px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 490px;
-        left: 280px;
+        top: -1240px;
     }
 
     /*Stats*/
     #stats {
+        position: relative;
+        top: 200px;
         height: 850px;
+        margin-bottom: 250px;
     }
 
     #stats .content-box-md {
@@ -2632,24 +1414,25 @@
         font-size: 15px;
     }     
 
+
     /*Contact*/
     
     .contact_logo {
         position: relative;
-        width: 150px;
-        top: -10px;
+        width: 190px;
+        top: -30px;
         left: -5px;
     }
 
     .office {
-        top: 10px;
+        top: -20px;
         left: 5px;
     }
 
     .office-details {
         font-size: 15px;
         line-height: 33px;
-        width: 550px;
+        width: 590px;
         text-align: justify;
     }
     
@@ -2690,7 +1473,7 @@
     position: relative;
     top: -13px;
     left: -15px;
-    width: 100px;
+    width: 190px;
     height: 60px;
 }
 
@@ -2705,7 +1488,7 @@
     left: 580px;
     top: 5px;
     font-size: 30px;
-    color: #7065f0
+    color: #000038
 }
 
 #mobile-nav-close-btn {
@@ -2727,50 +1510,10 @@
 
 /*Below is the "Reach Us! section" at the navigation bar css*/
 .get_touch_btn a {
-    top: 10px;
-    left: -450px;
+    top: 20px;
+    left: -360px;
     text-decoration: none;
-} 
-
-/*Home section*/
-#home {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 200px;
-}
-
-#background_image img {
-    visibility: hidden;
-}
-
-/*767 - 563 is tablet screen size hence, I am using a medium picture of the home screen*/
-#background_image{
-    background-image: url('/img/about_page_images/about_home_image_medium.jpg');
-    height: 100%;
-    width: 100%;
-}
-
-#home .row {
-    width: 870px;
-}
-
-.home-screen {
-    height: 1000px;
-}
-
-.home-screen h1 {
-    position: relative;
-    top: 90px;
-    left: 190px;
-    font-size: 40px;
-    width: 600px;
-}
-.home-screen p {
-    position: relative;
-    top: 80px;
-    left: 190px;
-    font-size: 15px;
-}
+}  
 
 /* ======================================
 |   |   |   Arrow down which displays only from this mobile view
@@ -2795,22 +1538,26 @@
 }
 /*Arrow down ends here*/
 
-    /*About Team*/
-    #about_team {
-        height: 3100px;
-        margin-top: -200px;
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -2060px;
-        left: 270px;
-        width: 320px;
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 3090px;
     }
 
     #about_team_text {
         position: relative;
-        top: -110px;
+        top: -15px;
         left: 5px;
         width: 590px;
     }
@@ -2833,7 +1580,7 @@
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -800px;
+        top: 100px;
         padding-top: 0px;
     }
 
@@ -2922,251 +1669,114 @@
         left: 320px;
     }
 
-/*Estate section*/
+    #team_7 {
+        position: relative;
+        top: -1240px;
+    }
 
-#estate {
-    height: 1500px;
-    margin-top: 100px;
-}
+    /*Stats*/
+    #stats {
+        position: relative;
+        top: 200px;
+        height: 850px;
+        margin-bottom: 250px;
+    }
 
-#estate_header h2 {
-    position: relative;
-    top: -60px;
-    left: 10px;
-    width: 762px;
-    height: 67px;
-    font-size: 40px;
-    width: 550px;
-    line-height: 50px;
-}
+    #stats .content-box-md {
+        height: 850px;
+    }
 
-#estate_header p {
-    position: relative;
-    top: -40px;
-    left: 10px;
-    font-size: 15px;
-    line-height: 23px;
-    text-align: justify;
-    width: 590px;
-    padding: 20px 0;
-}
+    #stats .first_stats {
+        height: 100px;
+        width: 290px;
+        top: -20px;
+        left: 200px;
+        padding: 20px;
+    }
 
-#estate_view_1 {
-    position: relative;
-    top: -20px;
-    left: -20px;
-    width: 320px;
-}
+    #stats .second_stats {
+        height: 100px;
+        width: 290px;
+        left: 200px;
+        top: 100px;
+        padding: 20px;
+    }
 
-/*Sold/Available button posiition for estate view 1*/
-#view_1 .image_btn_one a,
-#view_2 .image_btn_two a,
-#view_3 .image_btn_three a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-}
-/*Sold/Available for estate view 1 ends here*/
+    #stats .third_stats {
+        height: 100px;
+        width: 290px;
+        left: 200px;
+        top: 220px;
+        padding: 20px;
+    }
 
-#estate_view_1 img {
-    height: 260px;
-    width: 99%;
-}
+    #stats .vertical-heading h2 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
 
-#view_1 {
-    width: 100%;
-    height: 520px;
-    margin-bottom: 60px;
-}
-#view_2 {
-    position: relative;
-    top: -580px;
-    left: 320px;
-    width: 100%;
-    height: 520px;
-    margin-bottom: 60px;
-}
-#view_3 {
-    position: relative;
-    top: -580px;
-    width: 100%;
-    height: 520px;
-    margin-bottom: 60px;
-}
-/*====================================
-|  |  CSS that affect all section
-=====================================*/
-/*housing text for all estate*/
-.housing_text_below h2 {
-    font-size: 20px;
-}
-.housing_text_below p {
-    font-size: 14px;
-}
-/*View button effect for all section and some for estate 1 section because of movement levels*/
-.view_btn a {
-    position: relative;
-    top: 5px;
-    left: -5px;
-    padding: 8px 60px;
-    font-size: 9px;
-}
+    #stats .vertical-heading p {
+        font-size: 15px;
+        line-height: 20px;
+    }
 
-/*View button for estate 2 section because of movement levels*/
-#estate_view_2 .view_btn a {
-    position: relative;
-    top: 60px;
-}
-/*======ends here================*/
+    .stats-item i {
+        font-size: 30px;
+    }
 
-#estate_view_2 {
-    position: relative;
-    top: -80px;
-    left: -80px;
-    width: 340px;
-}
+    .stats-item h3 {
+        font-size: 30px;
+    }
 
-/*Sold/Available button posiition for estate view 2*/
-#view_4 .image_btn_four a,
-#view_5 .image_btn_five a,
-#view_6 .image_btn_six a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-}
-/*Sold/Available for estate view 2 ends here*/
+    .stats-item p {
+        font-size: 15px;
+    }     
 
-#estate_view_2 img {
-    height: 260px;
-    width: 99%;
-}
-#view_4 {
-    position: relative;
-    left: 380px;
-    width: 100%;
-    height: 520px;
-}
-#view_5 {
-    position: relative;
-    top: 60px;
-    left: 60px;
-    width: 100%;
-    height: 520px;
-}
-#view_6 {
-    position: relative;
-    top: -460px;
-    left: 380px;
-    width: 100%;
-    height: 520px;
-}
 
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 510px;
-    left: 250px;
-}
+    /*Contact*/
 
-/*Stats*/
-#stats {
-    height: 850px;
-}
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -40px;
+        left: -5px;
+    }
 
-#stats .content-box-md {
-    height: 850px;
-}
+    .office {
+        top: -35px;
+        left: 5px;
+    }
 
-#stats .first_stats {
-    height: 100px;
-    width: 290px;
-    top: -20px;
-    left: 180px;
-    padding: 20px;
-}
+    .office-details {
+        font-size: 15px;
+        line-height: 33px;
+        width: 550px;
+        text-align: justify;
+    }
 
-#stats .second_stats {
-    height: 100px;
-    width: 290px;
-    left: 180px;
-    top: 100px;
-    padding: 20px;
-}
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
 
-#stats .third_stats {
-    height: 100px;
-    width: 290px;
-    left: 180px;
-    top: 220px;
-    padding: 20px;
-}
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -10px;
+        font-size: 15px;
+        
+    }
 
-#stats .vertical-heading h2 {
-    font-size: 40px;
-    line-height: 40px;
-    padding-bottom: 10px;
-}
+    .footer_icons {
+        left:  -50px;
+        font-size: 20px;
+    }
 
-#stats .vertical-heading p {
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.stats-item i {
-    font-size: 30px;
-}
-
-.stats-item h3 {
-    font-size: 30px;
-}
-
-.stats-item p {
-    font-size: 15px;
-}     
-
-/*Contact*/
-
-.contact_logo {
-    position: relative;
-    width: 150px;
-    top: -10px;
-    left: 5px;
-}
-
-.office {
-    top: 10px;
-    left: 5px;
-}
-
-.office-details {
-    font-size: 15px;
-    line-height: 33px;
-    width: 550px;
-    text-align: justify;
-}
-
-/*Footer*/
-footer {
-    padding: 5px;
-}
-
-footer p {
-    position: relative;
-    top: 14px;
-    left: -10px;
-    font-size: 15px;
-    
-}
-
-.footer_icons {
-    left:  -50px;
-    font-size: 20px;
-}
-
-.btn-back-to-top {
-    font-size: 20px;
-    z-index: 1;
-}
+    .btn-back-to-top {
+        font-size: 20px;
+        z-index: 1;
+    }
 
 }
 
@@ -3182,8 +1792,7 @@ footer p {
     position: relative;
     top: -13px;
     left: -15px;
-    width: 100px;
-    height: 60px;
+    width: 190px;
 }
 
 /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -3197,7 +1806,7 @@ footer p {
     left: 510px;
     top: 5px;
     font-size: 30px;
-    color: #7065f0
+    color: #000038
 }
 
 #mobile-nav-close-btn {
@@ -3219,51 +1828,10 @@ footer p {
 
 /*Below is the "Reach Us! section" at the navigation bar css*/
 .get_touch_btn a {
-    top: 10px;
-    left: -450px;
+    top: 20px;
+    left: -360px;
     text-decoration: none;
-} 
-
-/*Home section*/
-#home {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 200px;
-}
-
-#background_image img {
-    visibility: hidden;
-}
-
-/*767 - 563 is tablet screen size hence, I am using a medium picture of the home screen*/
-#background_image{
-    background-image: url('/img/about_page_images/about_home_image_medium.jpg');
-    height: 100%;
-    width: 100%;
-}
-
-#home .row {
-    width: 740px;
-}
-
-.home-screen {
-    height: 1000px;
-}
-
-.home-screen h1 {
-    position: relative;
-    top: 90px;
-    left: 190px;
-    font-size: 40px;
-    width: 550px;
-}
-.home-screen p {
-    position: relative;
-    top: 80px;
-    left: 190px;
-    font-size: 15px;
-    width: 500px;
-}
+}  
 
 /* ======================================
 |   |   |   Arrow down which displays only from this mobile view
@@ -3288,22 +1856,26 @@ footer p {
 }
 /*Arrow down ends here*/
 
-    /*About Team*/
-    #about_team {
-        height: 3100px;
-        margin-top: -200px;
+/*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -2210px;
-        left: 220px;
-        width: 320px;
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 3090px;
     }
 
     #about_team_text {
         position: relative;
-        top: -110px;
+        top: -15px;
         left: 5px;
         width: 525px;
     }
@@ -3325,7 +1897,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -800px;
+        top: 100px;
         padding-top: 0px;
     }
 
@@ -3414,238 +1986,118 @@ footer p {
         left: 280px;
     }
 
-/*Estate section*/
+    #team_7 {
+        position: relative;
+        top: -1140px;
+    }
 
-#estate {
-    height: 2300px;
-    margin-top: 100px;
-}
+    /*Stats*/
+    #stats {
+        position: relative;
+        top: 50px;
+        height: 850px;
+        margin-bottom: 100px;
+    }
 
-#estate_header h2 {
-    position: relative;
-    top: -60px;
-    left: 10px;
-    width: 762px;
-    height: 67px;
-    font-size: 40px;
-    width: 550px;
-    line-height: 50px;
-}
+    #stats .content-box-md {
+        height: 850px;
+    }
 
-#estate_header p {
-    position: relative;
-    top: -40px;
-    left: 10px;
-    font-size: 15px;
-    line-height: 23px;
-    text-align: justify;
-    width: 520px;
-    padding: 20px 0;
-}
+    #stats .first_stats {
+        height: 100px;
+        width: 290px;
+        top: -20px;
+        left: 160px;
+        padding: 20px;
+    }
 
-#estate_view_1 {
-    position: relative;
-    left: 10px;
-    top: -20px;
-    width: 100px;
-}
+    #stats .second_stats {
+        height: 100px;
+        width: 290px;
+        left: 160px;
+        top: 100px;
+        padding: 20px;
+    }
 
-/*Sold/Available button posiition for estate view 1*/
-#view_1 .image_btn_one a,
-#view_2 .image_btn_two a,
-#view_3 .image_btn_three a {
-    position: relative;
-    top: -330px;
-    left: 10px;
-}
-/*Sold/Available for estate view 1 ends here*/
+    #stats .third_stats {
+        height: 100px;
+        width: 290px;
+        left: 160px;
+        top: 220px;
+        padding: 20px;
+    }
 
-#estate_view_1 img {
-    height: 350px;
-    width: 99%;
-}
+    #stats .vertical-heading h2 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
 
-#view_1 {
-    width: 500px;
-    height: 580px;
-    margin-bottom: 60px;
-}
-#view_2 {
-    width: 500px;
-    height: 580px;
-    margin-bottom: 60px;
-}
-#view_3 {
-    width: 500px;
-    height: 580px;
-    margin-bottom: 60px;
-}
-/*====================================
-|  |  CSS that affect all section
-=====================================*/
-/*housing text for all estate*/
-.housing_text_below h2 {
-    font-size: 16px;
-}
-.housing_text_below p {
-    font-size: 13px;
-}
-/*button for all section*/
-.view_btn a {
-    position: relative;
-    top: 12px;
-    left: 20px;
-    padding: 8px 80px;
-}
-/*======ends here================*/
+    #stats .vertical-heading p {
+        font-size: 15px;
+        line-height: 20px;
+    }
 
-#estate_view_2 {
-    display: none;
-    position: relative;
-    top: -20px;
-    left: -35px;
-    width: 1000px;
-}
+    .stats-item i {
+        font-size: 30px;
+    }
 
-/*Sold/Available button posiition for estate view 2*/
-#view_4 .image_btn_four a,
-#view_5 .image_btn_five a,
-#view_6 .image_btn_six a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-}
-/*Sold/Available for estate view 2 ends here*/
+    .stats-item h3 {
+        font-size: 30px;
+    }
 
-#estate_view_2 img {
-    height: 350px;
-    width: 99%;
-}
-#view_4 {
-    width: 500px;
-    height: 580px;
-}
-#view_5 {
-    width: 500px;
-    height: 580px;
-}
-#view_6 {
-    width: 500px;
-    height: 580px;
-}
+    .stats-item p {
+        font-size: 15px;
+    }     
 
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 1300px;
-    left: 200px;
-}
+    /*Contact*/
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -40px;
+        left: -5px;
+    }
 
-/*Stats*/
-#stats {
-    height: 850px;
-}
+    .office {
+        top: -20px;
+        left: -3px;
+    }
 
-#stats .content-box-md {
-    height: 850px;
-}
+    .office-details {
+        font-size: 15px;
+        line-height: 30px;
+        width: 550px;
+        text-align: justify;
+    }
 
-#stats .first_stats {
-    height: 100px;
-    width: 290px;
-    top: -20px;
-    left: 150px;
-    padding: 20px;
-}
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
 
-#stats .second_stats {
-    height: 100px;
-    width: 290px;
-    left: 150px;
-    top: 100px;
-    padding: 20px;
-}
+    footer p {
+        position: relative;
+        top: 14px;
+        left: -15px;
+        font-size: 13px;
+        
+    }
 
-#stats .third_stats {
-    height: 100px;
-    width: 290px;
-    left: 150px;
-    top: 220px;
-    padding: 20px;
-}
+    .footer_icons {
+        left:  -50px;
+        font-size: 18px;
+    }
 
-#stats .vertical-heading h2 {
-    font-size: 40px;
-    line-height: 40px;
-    padding-bottom: 10px;
-}
-
-#stats .vertical-heading p {
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.stats-item i {
-    font-size: 30px;
-}
-
-.stats-item h3 {
-    font-size: 30px;
-}
-
-.stats-item p {
-    font-size: 15px;
-}     
-
-/*Contact*/
-
-.contact_logo {
-    position: relative;
-    width: 150px;
-    top: -10px;
-    left: -10px;
-}
-
-.office {
-    top: 10px;
-    left: -3px;
-}
-
-.office-details {
-    font-size: 15px;
-    line-height: 30px;
-    width: 550px;
-    text-align: justify;
-}
-
-/*Footer*/
-footer {
-    padding: 5px;
-}
-
-footer p {
-    position: relative;
-    top: 14px;
-    left: -15px;
-    font-size: 13px;
-    
-}
-
-.footer_icons {
-    left:  -50px;
-    font-size: 18px;
-}
-
-.socials_icons {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .socials_icons {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 
-.btn-back-to-top {
-    font-size: 20px;
-    z-index: 1;
-}
+    .btn-back-to-top {
+        font-size: 20px;
+        z-index: 1;
+    }
 
 }
 
@@ -3662,8 +2114,7 @@ footer p {
         position: relative;
         top: -5px;
         left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -3677,7 +2128,7 @@ footer p {
         left: 430px;
         top: 5px;
         font-size: 25px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -3699,52 +2150,10 @@ footer p {
 
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        top: 10px;
-        left: -450px;
+        top: 20px;
+        left: -360px;
         text-decoration: none;
     }  
-
-    /*Home section*/
-    #home {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 100px;
-    }
-
-    #background_image img { 
-        visibility: hidden;
-    }
-
-    /*481 is extra small screen hence, I am using the small picture of the home screen*/
-    #background_image{
-        background-image: url('/img/about_page_images/about_home_image_small.jpg');
-        height: 100%;
-        width: 100%;
-    }
-
-    #home .row {
-        width: 690px;
-    }
-    
-    .home-screen {
-        height: 1000px;
-    }
-    
-    .home-screen h1 {
-        position: relative;
-        top: 90px;
-        left: 190px;
-        font-size: 30px;
-        width: 500px;
-    }
-    .home-screen p {
-        position: relative;
-        top: 80px;
-        left: 190px;
-        font-size: 13px;
-        width: 440px;
-        text-align: justify;
-    }
 
     /* ======================================
     |   |   |   Arrow down which displays only from this mobile view
@@ -3769,33 +2178,36 @@ footer p {
     }
     /*Arrow down ends here*/
 
-    /*About Team section*/
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
+    }
+
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
     #about_team {
         height: 5500px;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -1650px;
-        left: -60px;
-        width: 380px;
-        height: 285px;
-        z-index: 1;
-    }
-
     #about_team_text {
         position: relative;
-        top: 100px;
+        top: -15px;
+        left: 5px;
         width: 450px;
-        height: 1050px;
     }
 
     #about_team_text h2 {
         position: relative;
-        top: -300px;
+        top: -40px;
         font-size: 30px;
-        line-height: 40px;
-        width: 350px;
+        line-height: 50px;
+        /* width: 330px; */
     }
 
     #about_team_text p {
@@ -3807,7 +2219,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -500px;
+        top: 100px;
         padding-top: 80px;
     }
 
@@ -3866,194 +2278,77 @@ footer p {
         padding-left: 8px;
         padding-right: 8px;
     }
-    /*the below class was added to adjust mobile view for the second row following the following the 12 column rule*/
+    /*the below class was added to adjust mobile view for the second and third row following the following the 12 column rule*/
     .second_row {
         position: relative;
-        top: -580px;
+        top: 20px;
+    }
+
+    .third_row {
+        position: relative;
+        top: -50px;
     }
     
-    /*Estate section*/
-
-    #estate {
-        height: 2300px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
-        position: relative;
-        top: -65px;
-        left: -5px;
-        width: 762px;
-        height: 67px;
-        font-size: 30px;
-        width: 300px;
-        line-height: 40px;
-    }
-
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: -5px;
-        font-size: 13px;
-        line-height: 23px;
-        text-align: justify;
-        width: 450px;
-    }
-
-    #estate_view_1 {
-        position: relative;
-        left: 10px;
-        top: -20px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -345px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 360px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 420px;
-        height: 590px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 420px;
-        height: 590px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 420px;
-        height: 620px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 16px;
-    }
-    .housing_text_below p {
-        font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-        position: relative;
-        top: 12px;
-        left: 20px;
-        padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        display: none;
-        position: relative;
-        top: -20px;
-        left: -35px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 99%;
-    }
-    #view_4 {
-        width: 320px;
-        height: 460px;
-    }
-    #view_5 {
-        width: 320px;
-        height: 460px;
-    }
-    #view_6 {
-        width: 320px;
-        height: 460px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 1350px;
-        left: 150px;
-        font-size: 15px;
-    }
 
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 50px;
+        height: 900px;
+        margin-bottom: 60px;
     }
 
     #stats .content-box-md {
-        height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
         height: 100px;
-        width: 260px;
+        width: 290px;
         top: -20px;
-        left: 110px;
+        left: 100px;
         padding: 20px;
     }
 
     #stats .second_stats {
         height: 100px;
-        width: 260px;
-        left: 110px;
-        top: 80px;
+        width: 290px;
+        left: 100px;
+        top: 100px;
         padding: 20px;
     }
 
     #stats .third_stats {
         height: 100px;
-        width: 260px;
-        left: 110px;
-        top: 180px;
+        width: 290px;
+        left: 100px;
+        top: 220px;
         padding: 20px;
     }
 
     #stats .vertical-heading h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 40px;
         padding-bottom: 10px;
     }
-    
+
     #stats .vertical-heading p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .stats-item i {
-        font-size: 25px;
+        font-size: 30px;
     }
-    
+
     .stats-item h3 {
-        font-size: 25px;
+        font-size: 30px;
     }
-    
+
     .stats-item p {
-        font-size: 12px;
-    }    
+        font-size: 15px;
+    }     
+
 
     /*Contact*/
     #contact {
@@ -4062,9 +2357,9 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -30px;
+        left: -5px;
     }
     
     .office {
@@ -4074,9 +2369,9 @@ footer p {
     }
 
     .office-details {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 25px;
-        width: 350px;
+        width: 440px;
         text-align: justify;
     }
     
@@ -4120,8 +2415,7 @@ footer p {
         position: relative;
         top: -5px;
         left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -4135,7 +2429,7 @@ footer p {
         left: 360px;
         top: 5px;
         font-size: 25px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -4157,52 +2451,10 @@ footer p {
 
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-        top: 10px;
-        left: -450px;
+        top: 20px;
+        left: -360px;
         text-decoration: none;
     }  
-
-    /*Home section*/
-    #home {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 100px;
-    }
-
-    #background_image img { 
-        visibility: hidden;
-    }
-
-    /*481 is extra small screen hence, I am using the small picture of the home screen*/
-    #background_image{
-        background-image: url('/img/about_page_images/about_home_image_small.jpg');
-        height: 100%;
-        width: 100%;
-    }
-
-    #home .row {
-        width: 600px;
-    }
-    
-    .home-screen {
-        height: 1000px;
-    }
-    
-    .home-screen h1 {
-        position: relative;
-        top: 90px;
-        left: 190px;
-        font-size: 29px;
-        width: 400px;
-    }
-    .home-screen p {
-        position: relative;
-        top: 80px;
-        left: 190px;
-        font-size: 13px;
-        width: 370px;
-        text-align: justify;
-    }
 
     /* ======================================
     |   |   |   Arrow down which displays only from this mobile view
@@ -4227,33 +2479,36 @@ footer p {
     }
     /*Arrow down ends here*/
 
-    /*About Team section*/
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
+    }
+
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
     #about_team {
         height: 5100px;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -1650px;
-        left: -60px;
-        width: 380px;
-        height: 285px;
-        z-index: 1;
-    }
-
     #about_team_text {
         position: relative;
-        top: 100px;
+        top: -15px;
+        left: 5px;
         width: 380px;
-        height: 1050px;
     }
 
     #about_team_text h2 {
         position: relative;
-        top: -300px;
-        font-size: 29px;
-        line-height: 40px;
-        width: 350px;
+        top: -40px;
+        font-size: 30px;
+        line-height: 50px;
+        width: 250px;
     }
 
     #about_team_text p {
@@ -4265,7 +2520,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -360px;
+        top: 50px;
         padding-top: 80px;
     }
 
@@ -4327,192 +2582,72 @@ footer p {
     /*the below class was added to adjust mobile view for the second row following the following the 12 column rule*/
     .second_row {
         position: relative;
-        top: -430px;
+        top: 20px;
     }
 
-    
-    /*Estate section*/
-
-    #estate {
-        height: 2350px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
+    .third_row {
         position: relative;
-        top: -65px;
-        left: -5px;
-        width: 762px;
-        height: 67px;
-        font-size: 30px;
-        width: 300px;
-        line-height: 40px;
-    }
-
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: -5px;
-        font-size: 13px;
-        line-height: 23px;
-        text-align: justify;
-        width: 380px;
-    }
-
-    #estate_view_1 {
-        position: relative;
-        left: -25px;
-        top: -20px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -345px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 360px;
-        width: 99%;
-    }
-
-    #view_1 {
-        width: 390px;
-        height: 590px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 390px;
-        height: 620px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 390px;
-        height: 620px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 16px;
-    }
-    .housing_text_below p {
-        font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-        position: relative;
-        top: 12px;
-        left: 20px;
-        padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        display: none;
-        position: relative;
-        top: -20px;
-        left: -35px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 360px;
-        width: 99%;
-    }
-    #view_4 {
-        width: 390px;
-        height: 620px;
-    }
-    #view_5 {
-        width: 390px;
-        height: 620px;
-    }
-    #view_6 {
-        width: 390px;
-        height: 620px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 1350px;
-        left: 120px;
-        font-size: 15px;
+        top: -50px;
     }
 
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 50px;
+        height: 900px;
+        margin-bottom: 60px;
     }
 
     #stats .content-box-md {
-        height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
         height: 100px;
-        width: 260px;
+        width: 290px;
         top: -20px;
-        left: 90px;
+        left: 80px;
         padding: 20px;
     }
 
     #stats .second_stats {
         height: 100px;
-        width: 260px;
-        left: 90px;
-        top: 80px;
+        width: 290px;
+        left: 80px;
+        top: 100px;
         padding: 20px;
     }
 
     #stats .third_stats {
         height: 100px;
-        width: 260px;
-        left: 90px;
-        top: 180px;
+        width: 290px;
+        left: 80px;
+        top: 220px;
         padding: 20px;
     }
 
     #stats .vertical-heading h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 40px;
         padding-bottom: 10px;
     }
-    
+
     #stats .vertical-heading p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .stats-item i {
-        font-size: 25px;
+        font-size: 30px;
     }
-    
+
     .stats-item h3 {
-        font-size: 25px;
+        font-size: 30px;
     }
-    
+
     .stats-item p {
-        font-size: 12px;
-    }    
+        font-size: 15px;
+    }     
 
     /*Contact*/
     #contact {
@@ -4521,21 +2656,21 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
+        width: 190px;
         top: -40px;
-        left: 10px;
+        left: -5px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -20px;
         left: -5px;
     }
 
     .office-details {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 25px;
-        width: 350px;
+        width: 390px;
         text-align: justify;
     }
     
@@ -4579,8 +2714,7 @@ footer p {
     position: relative;
     top: -5px;
     left: -15px;
-    width: 65px;
-    height: 40px;
+    width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -4594,7 +2728,7 @@ footer p {
     left: 320px;
     top: 5px;
     font-size: 25px;
-    color: #7065f0
+    color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -4616,52 +2750,10 @@ footer p {
 
     /*Below is the "Reach Us! section" at the navigation bar css*/
     .get_touch_btn a {
-    top: 10px;
-    left: -450px;
-    text-decoration: none;
-    }  
-
-    /*Home section*/
-    #home {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 100px;
-    }
-
-    #background_image img { 
-    visibility: hidden;
-    }
-
-    /*481 is extra small screen hence, I am using the small picture of the home screen*/
-    #background_image{
-    background-image: url('/img/about_page_images/about_home_image_small.jpg');
-    height: 100%;
-    width: 100%;
-    }
-
-    #home .row {
-        width: 600px;
-    }
-    
-    .home-screen {
-        height: 1000px;
-    }
-    
-    .home-screen h1 {
-        position: relative;
-        top: 90px;
-        left: 180px;
-        font-size: 29px;
-        width: 400px;
-    }
-    .home-screen p {
-        position: relative;
-        top: 80px;
-        left: 180px;
-        font-size: 13px;
-        width: 280px;
-        text-align: justify;
-    }
+        top: 20px;
+        left: -360px;
+        text-decoration: none;
+    } 
 
     /* ======================================
     |   |   |   Arrow down which displays only from this mobile view
@@ -4686,33 +2778,36 @@ footer p {
     }
     /*Arrow down ends here*/
 
-    /*About Team section*/
-    #about_team {
-        height: 4900px;
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 100px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -1650px;
-        left: -60px;
-        width: 380px;
-        height: 285px;
-        z-index: 1;
+    .col-md-6 {
+        padding-bottom: 40px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 4700px;
     }
 
     #about_team_text {
         position: relative;
-        top: 100px;
+        top: -15px;
+        left: 5px;
         width: 330px;
-        height: 1050px;
     }
 
     #about_team_text h2 {
         position: relative;
-        top: -300px;
-        font-size: 29px;
-        line-height: 40px;
-        width: 350px;
+        top: -40px;
+        font-size: 30px;
+        line-height: 50px;
+        width: 250px;
     }
 
     #about_team_text p {
@@ -4724,7 +2819,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -200px;
+        top: 50px;
         padding-top: 80px;
     }
 
@@ -4786,191 +2881,73 @@ footer p {
     /*the below class was added to adjust mobile view for the second row following the following the 12 column rule*/
     .second_row {
         position: relative;
-        top: -270px;
+        top: 20px;
     }
 
-    /*Estate section*/
-
-    #estate {
-    height: 2300px;
-    margin-top: 100px;
-    }
-
-    #estate_header h2 {
-    position: relative;
-    top: -65px;
-    left: -5px;
-    width: 762px;
-    height: 67px;
-    font-size: 30px;
-    width: 300px;
-    line-height: 40px;
-    }
-
-    #estate_header p {
-    position: relative;
-    top: -40px;
-    left: -5px;
-    font-size: 13px;
-    line-height: 23px;
-    text-align: justify;
-    width: 330px;
-    }
-
-    #estate_view_1 {
-    position: relative;
-    left: -10px;
-    top: -20px;
-    width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-    position: relative;
-    top: -345px;
-    left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-    height: 360px;
-    width: 99%;
-    }
-
-    #view_1 {
-    width: 330px;
-    height: 590px;
-    margin-bottom: 60px;
-    }
-    #view_2 {
-    width: 330px;
-    height: 620px;
-    margin-bottom: 60px;
-    }
-    #view_3 {
-    width: 330px;
-    height: 620px;
-    margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-    font-size: 16px;
-    }
-    .housing_text_below p {
-    font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-    position: relative;
-    top: 12px;
-    left: 20px;
-    padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-    display: none;
-    position: relative;
-    top: -20px;
-    left: -35px;
-    width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-    height: 360px;
-    width: 99%;
-    }
-    #view_4 {
-    width: 330px;
-    height: 620px;
-    }
-    #view_5 {
-    width: 330px;
-    height: 620px;
-    }
-    #view_6 {
-    width: 330px;
-    height: 620px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-    position: relative;
-    top: 1330px;
-    left: 90px;
-    font-size: 15px;
+    .third_row {
+        position: relative;
+        top: -50px;
     }
 
     /*Stats*/
     #stats {
-    height: 850px;
+        position: relative;
+        top: 50px;
+        height: 900px;
+        margin-bottom: 60px;
     }
 
     #stats .content-box-md {
-    height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
-    height: 100px;
-    width: 260px;
-    top: -20px;
-    left: 60px;
-    padding: 20px;
+        height: 100px;
+        width: 290px;
+        top: -20px;
+        left: 40px;
+        padding: 20px;
     }
 
     #stats .second_stats {
-    height: 100px;
-    width: 260px;
-    left: 60px;
-    top: 80px;
-    padding: 20px;
+        height: 100px;
+        width: 290px;
+        left: 40px;
+        top: 100px;
+        padding: 20px;
     }
 
     #stats .third_stats {
-    height: 100px;
-    width: 260px;
-    left: 60px;
-    top: 180px;
-    padding: 20px;
+        height: 100px;
+        width: 290px;
+        left: 40px;
+        top: 220px;
+        padding: 20px;
     }
 
     #stats .vertical-heading h2 {
-    font-size: 30px;
-    line-height: 40px;
-    padding-bottom: 10px;
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
     }
 
     #stats .vertical-heading p {
-    font-size: 13px;
-    line-height: 20px;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     .stats-item i {
-    font-size: 25px;
+        font-size: 30px;
     }
 
     .stats-item h3 {
-    font-size: 25px;
+        font-size: 30px;
     }
 
     .stats-item p {
-    font-size: 12px;
-    }    
+        font-size: 15px;
+    }     
+    
 
     /*Contact*/
     #contact {
@@ -4979,14 +2956,14 @@ footer p {
 
     .contact_logo {
     position: relative;
-    width: 120px;
-    top: -40px;
-    left: 10px;
+    width: 190px;
+    top: -50px;
+    left: -5px;
     }
 
     .office {
     position: relative;
-    top: 10px;
+    top: -40px;
     left: -5px;
     }
 
@@ -5037,8 +3014,7 @@ footer p {
     position: relative;
     top: -5px;
     left: -15px;
-    width: 65px;
-    height: 40px;
+    width: 120px;
 }
 
 /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -5052,7 +3028,7 @@ footer p {
     left: 310px;
     top: 5px;
     font-size: 25px;
-    color: #7065f0
+    color: #000038
 }
 
 #mobile-nav-close-btn {
@@ -5074,52 +3050,10 @@ footer p {
 
 /*Below is the "Reach Us! section" at the navigation bar css*/
 .get_touch_btn a {
-    top: 10px;
-    left: -450px;
+    top: 20px;
+    left: -360px;
     text-decoration: none;
-}  
-
-/*Home section*/
-#home {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-#background_image img {
-    /* display: none; */
-    visibility: hidden;
-}
-
-#background_image{
-    background-image: url('/img/about_page_images/about_home_image_small.jpg');
-    height: 100%;
-    width: 100%;
-}
-
-#home .row {
-    width: 600px;
-}
-
-.home-screen {
-    height: 1000px;
-}
-
-.home-screen h1 {
-    position: relative;
-    top: 90px;
-    left: 180px;
-    font-size: 29px;
-    width: 300px;
-}
-.home-screen p {
-    position: relative;
-    top: 80px;
-    left: 180px;
-    font-size: 13px;
-    width: 280px;
-    text-align: justify;
-}
+} 
 
 /* ======================================
 |   |   |   Arrow down which displays only from this mobile view
@@ -5144,33 +3078,36 @@ footer p {
 }
 /*Arrow down ends here*/
 
-    /*About Team section*/
-    #about_team {
-        height: 4900px;
+    /*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 80px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -1650px;
-        left: -60px;
-        width: 380px;
-        height: 285px;
-        z-index: 1;
+    .col-md-6 {
+        padding-bottom: 20px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 4700px;
     }
 
     #about_team_text {
         position: relative;
-        top: 100px;
+        top: -15px;
+        left: 5px;
         width: 330px;
-        height: 1050px;
     }
 
     #about_team_text h2 {
         position: relative;
-        top: -300px;
+        top: -40px;
         font-size: 30px;
-        line-height: 40px;
-        width: 350px;
+        line-height: 50px;
+        width: 250px;
     }
 
     #about_team_text p {
@@ -5182,7 +3119,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -200px;
+        top: 50px;
         padding-top: 80px;
     }
 
@@ -5244,243 +3181,125 @@ footer p {
     /*the below class was added to adjust mobile view for the second row following the following the 12 column rule*/
     .second_row {
         position: relative;
-        top: -270px;
+        top: -20px;
     }
 
-    /*Estate section*/
-
-#estate {
-    height: 2100px;
-    margin-top: 100px;
-}
-
-#estate_header h2 {
-    position: relative;
-    top: -65px;
-    left: -5px;
-    width: 762px;
-    height: 67px;
-    font-size: 30px;
-    width: 300px;
-    line-height: 40px;
-}
-
-#estate_header p {
-    position: relative;
-    top: -40px;
-    left: -5px;
-    font-size: 13px;
-    line-height: 23px;
-    text-align: justify;
-    width: 330px;
-}
-
-#estate_view_1 {
-    position: relative;
-    left: -18px;
-    top: -20px;
-    width: 1000px;
-}
-
-/*Sold/Available button posiition for estate view 1*/
-#view_1 .image_btn_one a,
-#view_2 .image_btn_two a,
-#view_3 .image_btn_three a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-}
-/*Sold/Available for estate view 1 ends here*/
-
-#estate_view_1 img {
-    height: 260px;
-    width: 99%;
-}
-
-#view_1 {
-    width: 320px;
-    height: 490px;
-    margin-bottom: 60px;
-}
-#view_2 {
-    width: 320px;
-    height: 520px;
-    margin-bottom: 60px;
-}
-#view_3 {
-    width: 320px;
-    height: 520px;
-    margin-bottom: 60px;
-}
-/*====================================
-|  |  CSS that affect all section
-=====================================*/
-/*housing text for all estate*/
-.housing_text_below h2 {
-    font-size: 16px;
-}
-.housing_text_below p {
-    font-size: 13px;
-}
-/*button for all section*/
-.view_btn a {
-    position: relative;
-    top: 12px;
-    left: 20px;
-    padding: 8px 80px;
-}
-/*======ends here================*/
-
-#estate_view_2 {
-    display: none;
-    position: relative;
-    top: -20px;
-    left: -35px;
-    width: 1000px;
-}
-
-/*Sold/Available button posiition for estate view 2*/
-#view_4 .image_btn_four a,
-#view_5 .image_btn_five a,
-#view_6 .image_btn_six a {
-    position: relative;
-    top: -245px;
-    left: 10px;
-}
-/*Sold/Available for estate view 2 ends here*/
-
-#estate_view_2 img {
-    height: 260px;
-    width: 99%;
-}
-#view_4 {
-    width: 320px;
-    height: 460px;
-}
-#view_5 {
-    width: 320px;
-    height: 460px;
-}
-#view_6 {
-    width: 320px;
-    height: 460px;
-}
-
-/*Estate down button*/
-.estate_header_btn a {
-    position: relative;
-    top: 1100px;
-    left: 80px;
-    font-size: 15px;
-}
-
-/*Stats*/
-#stats {
-    height: 850px;
-}
-
-#stats .content-box-md {
-    height: 850px;
-}
-
-#stats .first_stats {
-    height: 100px;
-    width: 260px;
-    top: -20px;
-    left: 40px;
-    padding: 20px;
-}
-
-#stats .second_stats {
-    height: 100px;
-    width: 260px;
-    left: 40px;
-    top: 80px;
-    padding: 20px;
-}
-
-#stats .third_stats {
-    height: 100px;
-    width: 260px;
-    left: 40px;
-    top: 180px;
-    padding: 20px;
-}
-
-#stats .vertical-heading h2 {
-    font-size: 30px;
-    line-height: 40px;
-    padding-bottom: 10px;
-}
-
-#stats .vertical-heading p {
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.stats-item i {
-    font-size: 25px;
-}
-
-.stats-item h3 {
-    font-size: 25px;
-}
-
-.stats-item p {
-    font-size: 12px;
-}    
+    .third_row {
+        position: relative;
+        top: -90px;
+    }
 
 
-/*Contact*/
-#contact {
-    height: 440px;
-}
+    /*Stats*/
+    #stats {
+        position: relative;
+        top: 50px;
+        height: 900px;
+        margin-bottom: 60px;
+    }
 
-.contact_logo {
-    position: relative;
-    width: 120px;
-    top: -40px;
-    left: 10px;
-}
+    #stats .content-box-md {
+        height: 900px;
+    }
 
-.office {
-    position: relative;
-    top: 10px;
-    left: -5px;
-}
+    #stats .first_stats {
+        height: 100px;
+        width: 290px;
+        top: -20px;
+        left: 40px;
+        padding: 20px;
+    }
 
-.office-details {
-    font-size: 13px;
-    line-height: 25px;
-    width: 320px;
-    text-align: justify;
-}
+    #stats .second_stats {
+        height: 100px;
+        width: 290px;
+        left: 40px;
+        top: 100px;
+        padding: 20px;
+    }
 
-/*Footer*/
-footer {
-    padding: 5px;
-}
+    #stats .third_stats {
+        height: 100px;
+        width: 290px;
+        left: 40px;
+        top: 220px;
+        padding: 20px;
+    }
 
-footer p {
-    position: relative;
-    top: 15px;
-    left: -10px;
-    font-size: 12px;
-    width: 350px;
-}
+    #stats .vertical-heading h2 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
 
-.footer_icons {
-    position: relative;
-    top: -60px;
-    left:  -200px;
-    font-size: 20px;
-    text-align: right;
-}
+    #stats .vertical-heading p {
+        font-size: 15px;
+        line-height: 20px;
+    }
 
-.btn-back-to-top {
-    font-size: 18px;
-    z-index: 1;
-}
+    .stats-item i {
+        font-size: 30px;
+    }
+
+    .stats-item h3 {
+        font-size: 30px;
+    }
+
+    .stats-item p {
+        font-size: 15px;
+    } 
+
+
+    /*Contact*/
+    #contact {
+        height: 440px;
+    }
+
+    .contact_logo {
+        position: relative;
+        width: 190px;
+        top: -80px;
+        left: -5px;
+    }
+
+    .office {
+        position: relative;
+        top: -70px;
+        left: -5px;
+    }
+
+    .office-details {
+        font-size: 13px;
+        line-height: 25px;
+        width: 320px;
+        text-align: justify;
+    }
+
+    /*Footer*/
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+        left: -10px;
+        font-size: 12px;
+        width: 350px;
+    }
+
+    .footer_icons {
+        position: relative;
+        top: -60px;
+        left:  -200px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .btn-back-to-top {
+        font-size: 18px;
+        z-index: 1;
+    }
 
 }
 
@@ -5494,8 +3313,7 @@ footer p {
         position: relative;
         top: -5px;
         left: -15px;
-        width: 65px;
-        height: 40px;
+        width: 120px;
     }
 
     /*Hide Navigation menu for smaller devices to allow Mobile menu drop down button*/
@@ -5509,7 +3327,7 @@ footer p {
         left: 300px;
         top: 5px;
         font-size: 25px;
-        color: #7065f0
+        color: #000038
     }
 
     #mobile-nav-close-btn {
@@ -5529,47 +3347,13 @@ footer p {
         padding: 5px 0;
     }
 
-    /*Home section*/
-    #home {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 100px;
-    }
+    /*Below is the "Reach Us! section" at the navigation bar css*/
+    .get_touch_btn a {
+    top: 20px;
+    left: -360px;
+    text-decoration: none;
+} 
 
-    #background_image img {
-        /* display: none; */
-        visibility: hidden;
-    }
-
-    #background_image{
-        background-image: url('/img/about_page_images/about_home_image_small.jpg');
-        height: 100%;
-        width: 100%;
-    }
-
-    #home .row {
-        width: 600px;
-    }
-    
-    .home-screen {
-        height: 1000px;
-    }
-    
-    .home-screen h1 {
-        position: relative;
-        top: 90px;
-        left: 180px;
-        font-size: 29px;
-        width: 300px;
-    }
-    .home-screen p {
-        position: relative;
-        top: 80px;
-        left: 180px;
-        font-size: 13px;
-        width: 280px;
-        text-align: justify;
-    }
     /* ======================================
     |   |   |   Arrow down which displays only from this mobile view
     ========================================= */
@@ -5592,33 +3376,36 @@ footer p {
     }
     /*Arrow down ends here*/
 
-    /*About Team section*/
-    #about_team {
-        height: 4900px;
+/*=====================================
+    |   |    Our values  |   |
+    =======================================*/
+    #value {
+        margin-bottom: 10px;
+        padding: 80px 0;
     }
 
-    #about_team_image .front {
-        position: relative;
-        top: -1650px;
-        left: -60px;
-        width: 380px;
-        height: 285px;
-        z-index: 1;
+    .col-md-6 {
+        padding-bottom: 20px;
+    }
+
+    /*About Team*/
+    #about_team {
+        height: 4700px;
     }
 
     #about_team_text {
         position: relative;
-        top: 100px;
+        top: -15px;
+        left: 5px;
         width: 310px;
-        height: 1050px;
     }
 
     #about_team_text h2 {
         position: relative;
-        top: -300px;
+        top: -40px;
         font-size: 30px;
-        line-height: 40px;
-        width: 350px;
+        line-height: 50px;
+        width: 250px;
     }
 
     #about_team_text p {
@@ -5630,7 +3417,7 @@ footer p {
     /* Team photo, text and icons */
     .team {
         position: relative;
-        top: -110px;
+        top: 50px;
         padding-top: 80px;
     }
 
@@ -5692,192 +3479,72 @@ footer p {
     /*the below class was added to adjust mobile view for the second row following the following the 12 column rule*/
     .second_row {
         position: relative;
-        top: -270px;
+        top: -20px;
+    }
+
+    .third_row {
+        position: relative;
+        top: -90px;
     }
     
     /*Stats*/
     #stats {
-        height: 850px;
+        position: relative;
+        top: 50px;
+        height: 900px;
+        margin-bottom: 60px;
     }
 
     #stats .content-box-md {
-        height: 850px;
+        height: 900px;
     }
 
     #stats .first_stats {
         height: 100px;
-        width: 260px;
+        width: 290px;
         top: -20px;
-        left: 40px;
+        left: 20px;
         padding: 20px;
     }
 
     #stats .second_stats {
         height: 100px;
-        width: 260px;
-        left: 40px;
-        top: 80px;
+        width: 290px;
+        left: 20px;
+        top: 100px;
         padding: 20px;
     }
 
     #stats .third_stats {
         height: 100px;
-        width: 260px;
-        left: 40px;
-        top: 180px;
+        width: 290px;
+        left: 20px;
+        top: 220px;
         padding: 20px;
     }
 
     #stats .vertical-heading h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 40px;
         padding-bottom: 10px;
     }
-    
+
     #stats .vertical-heading p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .stats-item i {
-        font-size: 25px;
-    }
-    
-    .stats-item h3 {
-        font-size: 25px;
-    }
-    
-    .stats-item p {
-        font-size: 12px;
-    }    
-
-    
-    /*Estate section*/
-
-    #estate {
-        height: 2100px;
-        margin-top: 100px;
-    }
-
-    #estate_header h2 {
-        position: relative;
-        top: -65px;
-        left: -5px;
-        width: 762px;
-        height: 67px;
         font-size: 30px;
-        width: 300px;
-        line-height: 40px;
     }
 
-    #estate_header p {
-        position: relative;
-        top: -40px;
-        left: -5px;
-        font-size: 13px;
-        line-height: 23px;
-        text-align: justify;
-        width: 330px;
+    .stats-item h3 {
+        font-size: 30px;
     }
 
-    #estate_view_1 {
-        position: relative;
-        left: -18px;
-        top: -20px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 1*/
-    #view_1 .image_btn_one a,
-    #view_2 .image_btn_two a,
-    #view_3 .image_btn_three a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 1 ends here*/
-
-    #estate_view_1 img {
-        height: 260px;
-        width: 315px;
-    }
-
-    #view_1 {
-        width: 320px;
-        height: 490px;
-        margin-bottom: 60px;
-    }
-    #view_2 {
-        width: 320px;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    #view_3 {
-        width: 320px;
-        height: 520px;
-        margin-bottom: 60px;
-    }
-    /*====================================
-    |  |  CSS that affect all section
-    =====================================*/
-    /*housing text for all estate*/
-    .housing_text_below h2 {
-        font-size: 16px;
-    }
-    .housing_text_below p {
-        font-size: 13px;
-    }
-    /*button for all section*/
-    .view_btn a {
-        position: relative;
-        top: 12px;
-        left: 20px;
-        padding: 8px 80px;
-    }
-    /*======ends here================*/
-
-    #estate_view_2 {
-        display: none;
-        position: relative;
-        top: -20px;
-        left: -35px;
-        width: 1000px;
-    }
-
-    /*Sold/Available button posiition for estate view 2*/
-    #view_4 .image_btn_four a,
-    #view_5 .image_btn_five a,
-    #view_6 .image_btn_six a {
-        position: relative;
-        top: -245px;
-        left: 10px;
-    }
-    /*Sold/Available for estate view 2 ends here*/
-
-    #estate_view_2 img {
-        height: 260px;
-        width: 315px;
-    }
-    #view_4 {
-        width: 320px;
-        height: 460px;
-    }
-    #view_5 {
-        width: 320px;
-        height: 460px;
-    }
-    #view_6 {
-        width: 320px;
-        height: 460px;
-    }
-
-    /*Estate down button*/
-    .estate_header_btn a {
-        position: relative;
-        top: 1100px;
-        left: 80px;
+    .stats-item p {
         font-size: 15px;
-}
+    } 
 
 
     /*Contact*/
@@ -5887,14 +3554,14 @@ footer p {
 
     .contact_logo {
         position: relative;
-        width: 120px;
-        top: -40px;
-        left: 10px;
+        width: 190px;
+        top: -80px;
+        left: -5px;
     }
     
     .office {
         position: relative;
-        top: 10px;
+        top: -70px;
         left: 5px;
     }
 

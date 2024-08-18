@@ -210,9 +210,8 @@ section {
 
 #about_team_text {
     position: relative;
-    top: -160px;
+    top: -150px;
     width: 1150px;
-
 }
 
 #about_team_text h2 {
@@ -241,7 +240,7 @@ section {
 |  |  Team photo, text and icons 
 ================================*/
 .team {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .team h2 {
@@ -570,7 +569,7 @@ footer p span {
     position: relative;
     left: 20px;
     top: -5px;
-    width: 120px;
+    width: 190px;
     height: auto;
 }
 
