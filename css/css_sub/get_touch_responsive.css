@@ -408,6 +408,11 @@
         top: -10px;
     }
 
+    #intouch {
+        height: 100%;
+        margin-bottom: 200px;
+    }
+
     #intouch_homepage h1 {
         position: relative;
         left: -440px;
@@ -556,6 +561,11 @@
         top: -10px;
     }
 
+    #intouch {
+        height: 100%;
+        margin-bottom: 200px;
+    }
+
     #intouch_homepage h1 {
         position: relative;
         left: -480px;
@@ -571,6 +581,12 @@
 
     .chat_and_btn p {
         font-size: 14px;
+    }
+
+    .get_touch_btn {
+        position: relative;
+        left: -640px;
+        margin-top: 40px;
     }
 
     /* ======================================
@@ -746,6 +762,12 @@
     .chat_and_btn p {
         font-size: 15px;
         line-height: 30px;
+    }
+
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -730px;
     }
 
     /* ======================================
@@ -941,6 +963,12 @@
         line-height: 30px;
     }
 
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -730px;
+    }
+
 /* ======================================
 |   |   |   Arrow down which displays only from this mobile view
 ========================================= */
@@ -1133,6 +1161,11 @@ footer p {
         line-height: 30px;
     }
 
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -730px;
+    }
 /* ======================================
 |   |   |   Arrow down which displays only from this mobile view
 ========================================= */
@@ -1332,6 +1365,12 @@ footer p {
     .chat_and_btn p {
         font-size: 13px;
         line-height: 30px;
+    }
+
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -720px;
     }
 
     /* ======================================
@@ -1534,6 +1573,12 @@ footer p {
         left: -190px;
         font-size: 13px;
         line-height: 30px;
+    }
+
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -720px;
     }
 
     /* ======================================
@@ -1740,6 +1785,12 @@ footer p {
         left: -190px;
         font-size: 13px;
         line-height: 27px;
+    }
+
+    .get_touch_btn {
+        position: relative;
+        top: -30px;
+        left: -720px;
     }
 
     /* ======================================
@@ -1952,6 +2003,12 @@ footer p {
     left: -190px;
     font-size: 13px;
     line-height: 27px;
+}
+
+.get_touch_btn {
+    position: relative;
+    top: -30px;
+    left: -720px;
 }
 
 /* ======================================
