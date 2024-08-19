@@ -1,0 +1,822 @@
+/*==========================================
+|   |   Bootstrap 3 Media Queries
+============================================*/
+
+/* Between screens ----------- */
+@media (min-width: 1100px) and (max-width: 1200px) {
+
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+    .item {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 50px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 160px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+    }
+    .all_pics4 {
+        padding: 30px;
+    }
+    .all_pics5 {
+        padding-left: 130px;
+    }
+    .all_pics6 {
+        padding: 20px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+    }
+} 
+
+
+/* Between screens ----------- */
+@media (min-width: 992px) and (max-width: 1099px) {
+
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 34px;
+    }
+    .item {
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 50px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 160px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+    }
+    .all_pics4 {
+        padding: 30px;
+    }
+    .all_pics5 {
+        padding-left: 130px;
+    }
+    .all_pics6 {
+        padding: 20px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+    }
+} 
+
+/* Between is for close to tablets ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 30px;
+    }
+    .item {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 50px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 150px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+    }
+    .all_pics4 {
+        padding: 30px;
+    }
+    .all_pics5 {
+        padding-left: 130px;
+    }
+    .all_pics6 {
+        padding: 20px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+    }
+
+} 
+
+
+/*The medium screen pic started below because it's tablet*/
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (min-width: 631px) and (max-width: 767px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 32px;
+    }
+    .item {
+        position: absolute;
+        width: 390px;
+        height: 500px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 50px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 150px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+    }
+    .all_pics4 {
+        padding: 30px;
+    }
+    .all_pics5 {
+        padding-left: 130px;
+    }
+    .all_pics6 {
+        padding: 20px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+    }
+}
+
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (min-width: 563px) and (max-width: 630px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 32px;
+    }
+    .item {
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 50px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 120px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+        padding-top: 70px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics4 {
+        padding: 30px;
+        padding-top: 70px;
+    }
+    .all_pics5 {
+        padding-left: 100px;
+        padding-top: 70px;
+    }
+    .all_pics6 {
+        padding: 20px;
+        padding-top: 70px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+        padding-top: 70px;
+    }
+}
+
+/*The small home screen pics started from this screen size*/
+/* Extra small Device (Portrait phones and Smaller devices) */
+@media (min-width: 413px) and (max-width: 562px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 30px;
+    }
+    .item {
+        position: absolute;
+        width: 260px;
+        height: 500px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 5px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 90px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 25px;
+        padding-top: 70px;
+    }
+    .all_pics2 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics3 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics4 {
+        padding: 20px;
+        padding-top: 70px;
+    }
+    .all_pics5 {
+        padding-left: 80px;
+        padding-top: 70px;
+    }
+    .all_pics6 {
+        padding: 20px;
+        padding-top: 70px;
+    }
+    .all_pics7 {
+        padding-left: 25px;
+        padding-top: 70px;
+    }
+    .all_pics8 {
+        padding-left: 20px;
+        padding-top: 70px;
+    }
+}
+
+
+/* Extra small Device - Medium mobile (Portrait phones and Smaller devices) */
+@media (min-width: 346px) and (max-width: 412px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 25px;
+    }
+    .item {
+        position: absolute;
+        width: 230px;
+        height: 550px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 5px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 100px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics2 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics3 {
+        padding-left: 0px;
+        padding-top: 60px;
+    }
+    .all_pics4 {
+        padding: 0px;
+        padding-top: 90px;
+    }
+    .all_pics5 {
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+    .all_pics6 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics7 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics8 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+}
+
+/* Extra small Device (Landscape phones and Portrait Tablets) */
+@media (max-width: 345px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 25px;
+    }
+    .item {
+        position: absolute;
+        width: 230px;
+        height: 550px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 5px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 100px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics2 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics3 {
+        padding-left: 0px;
+        padding-top: 60px;
+    }
+    .all_pics4 {
+        padding: 0px;
+        padding-top: 90px;
+    }
+    .all_pics5 {
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+    .all_pics6 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics7 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics8 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media (max-width : 320px) {
+    body {
+        background-image: 
+            linear-gradient(
+                to top right, #212226, #96F50F
+            );
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Plus Jakarta Sans", "Open Sans", "sans-serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+    }
+    .slider h1 {
+        font-size: 22px;
+    }
+    .item {
+        position: absolute;
+        width: 210px;
+        height: 550px;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        left: calc(40% - 100px);
+        top: 0;
+    }
+    #next, #prev {
+        position: absolute;
+        top: 40%;
+        color: #000038;
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left: 5px;
+    }
+    #next {
+        left: unset;
+        right: 50px;
+    }
+    
+    .item img {
+        width: 90px;
+    }
+    .item span {
+        font-weight: bold;
+    }
+    .all_pics1 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics2 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics3 {
+        padding-left: 0px;
+        padding-top: 60px;
+    }
+    .all_pics4 {
+        padding: 0px;
+        padding-top: 90px;
+    }
+    .all_pics5 {
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+    .all_pics6 {
+        padding: 0px;
+        padding-top: 70px;
+    }
+    .all_pics7 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+    .all_pics8 {
+        padding-left: 0px;
+        padding-top: 70px;
+    }
+}
