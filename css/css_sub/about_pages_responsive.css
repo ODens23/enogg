@@ -819,6 +819,12 @@
         top: -1240px;
     }
 
+    #team_8 {
+        position: relative;
+        top: -1660px;
+        left: 400px;
+    }
+
     /*Stats*/
     #stats .first_stats {
         height: 100px;
@@ -1064,6 +1070,12 @@
     #team_7 {
         position: relative;
         top: -1240px;
+    }
+
+    #team_8 {
+        position: relative;
+        top: -1660px;
+        left: 400px;
     }
 
     /*Stats*/
@@ -1353,6 +1365,12 @@
     #team_7 {
         position: relative;
         top: -1240px;
+    }
+
+    #team_8 {
+        position: relative;
+        top: -1660px;
+        left: 350px;
     }
 
     /*Stats*/
@@ -1674,6 +1692,12 @@
         top: -1240px;
     }
 
+    #team_8 {
+        position: relative;
+        top: -1660px;
+        left: 320px;
+    }
+
     /*Stats*/
     #stats {
         position: relative;
@@ -1991,6 +2015,12 @@
         top: -1140px;
     }
 
+    #team_8 {
+        position: relative;
+        top: -1520px;
+        left: 280px;
+    }
+
     /*Stats*/
     #stats {
         position: relative;
@@ -2192,7 +2222,7 @@
 
     /*About Team*/
     #about_team {
-        height: 5500px;
+        height: 6100px;
     }
 
     #about_team_text {
@@ -2493,7 +2523,7 @@
 
     /*About Team*/
     #about_team {
-        height: 5100px;
+        height: 5600px;
     }
 
     #about_team_text {
@@ -2792,7 +2822,7 @@
 
     /*About Team*/
     #about_team {
-        height: 4700px;
+        height: 5200px;
     }
 
     #about_team_text {
@@ -3092,7 +3122,7 @@
 
     /*About Team*/
     #about_team {
-        height: 4700px;
+        height: 5100px;
     }
 
     #about_team_text {
@@ -3390,7 +3420,7 @@
 
     /*About Team*/
     #about_team {
-        height: 4700px;
+        height: 5200px;
     }
 
     #about_team_text {
